@@ -205,10 +205,10 @@
 	});
 
 	$(document).ready(function() {
+		//   $('.main-menu ul.menu > li').addClass('activemenu');
 		$('.burger-btn').on('click', function() {
 		  $('.herader-mobile-wrapper').slideToggle();
 		  $('body').toggleClass('overflowbody mobile-menu-open');
-		//   $('.header-wrapper .header-menu-wrapper .header-menu-colum').addClass('activemenu');
 		});
 
 		var target = $('.main-menu ul.menu > li');
@@ -220,8 +220,9 @@
 			}
 		})
 		
-		$('.menu-image').on('click', function() {
+		$('.menu-arrow').on('click', function() {
       		$(this).siblings(".sub-menu").slideToggle().closest('.main-menu-item').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp()
+		 	$('body').toggleClass('open-submenu');
 		});  
 
 		/*contact form tab*/	  

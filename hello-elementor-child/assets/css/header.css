@@ -68,22 +68,6 @@ body.admin-bar [data-elementor-type="header"]{
     color: #fff;
     pointer-events: none;
 }
-
-.main-menu ul.menu > li .sub-menu{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 250px;
-    max-width: 250px;
-    background: white;
-    top: 50px;
-    padding: 0 12px;
-    border-radius: 5px;
-    display: none;
-    z-index: 2;
-    box-shadow: 4px 10px 26px rgb(0 0 0 / 36%);
-
-}
 .main-menu ul.menu > li .sub-menu li a{
     display: block;
     font-family: 'Open Sans';
