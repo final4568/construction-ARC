@@ -1,0 +1,26 @@
+@media screen and (max-width:1024px){
+    .main-menu ul.menu > li{
+        margin: 0 18px;
+    }
+    .main-menu ul.menu > li > a{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .menu-arrow {
+        width: 12px;
+        height: 12px;
+        right: calc(0% - 19px);
+    }
+}
+@media only screen and (max-width:782px){
+    body.admin-bar [data-elementor-type="header"]{
+      top: 46px;
+    }
+
+    /*header breaking point*/
+    .main-menu ul.menu > li{
+        margin: 0 15px;
+    }
+  
+
+}

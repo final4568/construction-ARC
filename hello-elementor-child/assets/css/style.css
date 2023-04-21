@@ -27,9 +27,9 @@ font-family: 'Lato', sans-serif;
 /* ------------------------------------------------------------
 Base
 ------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 html {
 	color: #000000;
@@ -121,7 +121,7 @@ a {
 	font-family: inherit;
 	font-weight: inherit;
 	text-decoration: none;
-	color:	#606D48;
+	color:	#D83434;
 	font-size: inherit;
 	transition: all 0.3s;
 }
@@ -139,7 +139,7 @@ a:hover {
 
 body a,
 body p a {
-	color:	#606D48;
+	color:	#D83434;
 	text-decoration: underline;
 	font-weight: 700;
 }
@@ -147,7 +147,7 @@ body p a {
 body a,
 body p a:hover {
 	text-decoration: none;
-	color:	#606D48;
+	color:	#D83434;
 }
 
 /* / =----------------------------UL/OL---------------------------- / */
@@ -210,13 +210,13 @@ body .site-main ul:not([class]) li ol li ul:not([class]) li {
     top: 12px;
     width: 5px;
     height: 5px;
-    background-color: #91A372;
+    background-color: #D83434;
     border-radius: 50%;
 }
 
 .site-main ol > li::marker, 
 .site-main ul:not([class]) li ol > li::marker{
-    color:#91A372;
+    color:#D83434;
 	content: "0" counter(list-item)":";
 }
 
@@ -251,35 +251,35 @@ blockquote:last-child {
 body {
 	margin: 0;
 	padding: 0;
-	color:	#2B2E2C;
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-family: "Open Sans", sans-serif;;
     font-size: 18px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 32px;
 	background-color: #FFFFFF;
 }
 
 html body .elementor-cta--skin-classic .elementor-cta__content-item{
-	color: 	#231F20;
+	color: 	#000000;
 }
 
-body .large-heading .elementor-widget-container .elementor-heading-title{
+/* body .large-heading .elementor-widget-container .elementor-heading-title{
 	font-family: "Forum", Georgia, serif;
     font-size: 114px;
     font-weight: 400;
 	line-height: 114px;
-}
+} */
 
 body .elementor-widget-heading h1.elementor-heading-title,
 body h1,
 body .h1, 
 body .elementor-widget-heading.h1 .elementor-heading-title, 
 h1.elementor-cta__title.elementor-cta__content-item {
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 52px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 54px;
     font-weight: 700;
-	line-height: 60px; /* 100px */
-	text-transform: uppercase;
+	line-height: 62px; /* 100px */
+	text-transform: capitalize;
 
 }
 
@@ -291,12 +291,11 @@ h2.elementor-cta__title.elementor-cta__content-item,
 body .elementor-image-box-content h2.elementor-image-box-title,
 .elementor-posts .elementor-post__card h2.elementor-post__title,
 .elementor-posts h2.elementor-post__title {
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 44px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
     font-weight: 700;
-	line-height: 52px; /* 80px */
-	text-transform: uppercase;
-
+	line-height: 48px; /* 80px */
+	text-transform: capitalize;
 	/* letter-spacing: -0.02em; */
 }
 
@@ -308,11 +307,11 @@ h3.elementor-cta__title.elementor-cta__content-item,
 body .elementor-image-box-content h3.elementor-image-box-title,
 .elementor-posts .elementor-post__card h3.elementor-post__title,
 .elementor-posts h3.elementor-post__title {
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 36px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
     font-weight: 700;
-	text-transform: uppercase;
-	line-height: 44px; /* 52px */
+	text-transform: capitalize;
+	line-height: 40px; /* 52px */
 	/* letter-spacing: -0.02em; */
 }
 
@@ -324,11 +323,11 @@ h4.elementor-cta__title.elementor-cta__content-item,
 body .elementor-image-box-content h4.elementor-image-box-title,
 .elementor-posts .elementor-post__card h4.elementor-post__title,
 .elementor-posts h4.elementor-post__title {
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-	text-transform: uppercase;
-	line-height: 36px; /* 40px */
+	font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+	text-transform: capitalize;
+	line-height: 32px; /* 40px */
 	/* letter-spacing: -0.02em; */
 }
 
@@ -340,11 +339,11 @@ h5.elementor-cta__title.elementor-cta__content-item,
 body .elementor-image-box-content h5.elementor-image-box-title,
 .elementor-posts .elementor-post__card h5.elementor-post__title,
 .elementor-posts h5.elementor-post__title {
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     font-weight: 700;
-	line-height: 30px; /* 40px */
-	/* letter-spacing: -0.02em; */
+	line-height: 28px; /* 40px */
+	text-transform: capitalize;
 }
 
 
@@ -356,25 +355,18 @@ h6.elementor-cta__title.elementor-cta__content-item,
 body .elementor-image-box-content h6.elementor-image-box-title,
 .elementor-posts .elementor-post__card h6.elementor-post__title,
 .elementor-posts h6.elementor-post__title {
-	font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     font-weight: 700;
-	line-height:28px; /* 40px */
-	/* letter-spacing: -0.02em */
+	line-height:24px; /* 40px */
+	text-transform: capitalize;
 }
 body .small-paragraph p,
 body .small-paragraph.elementor-widget-text-editor, 
 body .small-paragraph.elementor-widget-text-editor p{
-    font-size: 16px;
+	font-size: 16px;
     line-height: 24px;
-}
 
-
-
-body .large-paragraph.elementor-widget-text-editor, 
-body .large-paragraph.elementor-widget-text-editor p{
-    font-size: 24px;
-    line-height: 38px;
 }
 
 /* ------------------------------------------------------------
@@ -396,7 +388,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .elementor-button:after,
 [type="button"]:after {
 	content: "";
-	width: 211px;
+	width: 122px;
 	display: block;
 	max-width: 100%;
 }
@@ -416,32 +408,25 @@ body .elementor-widget-button .elementor-cta--skin-classic .elementor-cta__butto
 body.elementor-page .elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-button, 
 body.elementor-page .elementor-cta--skin-classic .elementor-cta__button.elementor-button{
 	color: 	#FFFFFF;
-    background-color: #E51836;
-    font-size: 18px !important;
-    line-height: 18px;
-    padding: 17px 27px;
-    font-weight: 700 !important;
-    border: 3px solid  #E51836;
+    background-color: #D83434;
+    font-size: 16px !important;
+    line-height: 20px;
+    padding: 16px 30px;
+    font-weight: 600 !important;
+    border: 2px solid  #D83434;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     -webkit-appearance: none;
     transition: all 0.3s;
     box-sizing: border-box;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+  	font-family: 'Montserrat', sans-serif;
     max-width: 100%;
 	text-transform: capitalize;
 }
 
-.elementor-button:after,
-[type="button"]:after {
-	content: "";
-	width: 211px;
-	display: block;
-	max-width: 100%;
-}
 
 body .elementor-widget-button [type="button"]:not(.gm-control-active):hover,
 body .elementor-widget-button [type="submit"]:not(.adminbar-button):hover,
@@ -457,167 +442,90 @@ body .elementor-widget-button .elementor-kit-7 .elementor-button:focus:hover,
 body .elementor-widget-button .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover, 
 body.elementor-page .elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-button:hover, 
 body.elementor-page .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover{
-	background-color: #FFF0F2;
-	color: #C30F29;
+	background-color: #FFFFFF;
+	color: #D83434;
 	text-decoration: none;
-	border-color: #C30F29 ;
+	border-color: #D83434;
 }
 
-body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active),
-body .elementor-widget-button.black-btn [type="submit"]:not(.adminbar-button),
-body .black-btn .elementor-button,
-body .elementor-widget-button.black-btn .elementor-button,
-body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active):focus,
-body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active),
-body .elementor-widget-button.black-btn [type="submit"]:not(.adminbar-button):focus,
-body .elementor-widget-button.black-btn button:not(.gm-control-active):focus,
-body .elementor-widget-button.black-btn button:not(.gm-control-active),
-body .elementor-widget-button.black-btn .elementor-cta .elementor-cta__button.elementor-button,
-body .elementor-widget-button.black-btn .elementor-kit-7 .elementor-button:focus,
-body .elementor-widget-button.black-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button, 
-body.elementor-page .elementor-widget-call-to-action.black-btn .elementor-cta__button-wrapper .elementor-button, 
-body.elementor-page .elementor-cta--skin-classic.black-btn .elementor-cta__button.elementor-button{
+body .elementor-widget-button.blue-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.blue-btn [type="submit"]:not(.adminbar-button),
+body .blue-btn .elementor-button,
+body .elementor-widget-button.blue-btn .elementor-button,
+body .elementor-widget-button.blue-btn [type="button"]:not(.gm-control-active):focus,
+body .elementor-widget-button.blue-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.blue-btn [type="submit"]:not(.adminbar-button):focus,
+body .elementor-widget-button.blue-btn button:not(.gm-control-active):focus,
+body .elementor-widget-button.blue-btn button:not(.gm-control-active),
+body .elementor-widget-button.blue-btn .elementor-cta .elementor-cta__button.elementor-button,
+body .elementor-widget-button.blue-btn .elementor-kit-7 .elementor-button:focus,
+body .elementor-widget-button.blue-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button, 
+body.elementor-page .elementor-widget-call-to-action.blue-btn .elementor-cta__button-wrapper .elementor-button, 
+body.elementor-page .elementor-cta--skin-classic.blue-btn .elementor-cta__button.elementor-button{
     color: #FFFFFF;
-    background-color: #231F20;
-    border: 3px solid #231F20;
+    background-color: #151336;
+    border: 2px solid #151336;
 }
 
-body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active):hover,
-body .elementor-widget-button.black-btn [type="submit"]:not(.adminbar-button):hover,
-body .elementor-widget-button.black-btn .elementor-button:hover,
-body .black-btn .elementor-button:hover,
-body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active):focus:hover,
-body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active):hover,
-body .elementor-widget-button.black-btn [type="submit"]:not(.adminbar-button):focus:hover,
-body .elementor-widget-button.black-btn button:not(.gm-control-active):focus:hover,
-body .elementor-widget-button.black-btn button:not(.gm-control-active):hover,
-body .elementor-widget-button.black-btn .elementor-cta .elementor-cta__button.elementor-button:hover,
-body .elementor-widget-button.black-btn .elementor-kit-7 .elementor-button:focus:hover,
-body .elementor-widget-button.black-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover, 
-body.elementor-page .elementor-widget-call-to-action.black-btn .elementor-cta__button-wrapper .elementor-button:hover, 
-body.elementor-page .elementor-cta--skin-classic.black-btn .elementor-cta__button.elementor-button:hover{
+body .elementor-widget-button.blue-btn [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.blue-btn [type="submit"]:not(.adminbar-button):hover,
+body .elementor-widget-button.blue-btn .elementor-button:hover,
+body .blue-btn .elementor-button:hover,
+body .elementor-widget-button.blue-btn [type="button"]:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.blue-btn [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.blue-btn [type="submit"]:not(.adminbar-button):focus:hover,
+body .elementor-widget-button.blue-btn button:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.blue-btn button:not(.gm-control-active):hover,
+body .elementor-widget-button.blue-btn .elementor-cta .elementor-cta__button.elementor-button:hover,
+body .elementor-widget-button.blue-btn .elementor-kit-7 .elementor-button:focus:hover,
+body .elementor-widget-button.blue-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover, 
+body.elementor-page .elementor-widget-call-to-action.blue-btn .elementor-cta__button-wrapper .elementor-button:hover, 
+body.elementor-page .elementor-cta--skin-classic.blue-btn .elementor-cta__button.elementor-button:hover{
 	background-color: #F4F4F4;
-    color: #231F20;
+    color: #151336;
 	text-decoration: none;
-    border-color:#231F20;
-}
-
-body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active),
-body .elementor-widget-button.transparent-btn [type="submit"]:not(.adminbar-button),
-body .transparent-btn .elementor-button,
-body .elementor-widget-button.transparent-btn .elementor-button,
-body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active):focus,
-body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active),
-body .elementor-widget-button.transparent-btn [type="submit"]:not(.adminbar-button):focus,
-body .elementor-widget-button.transparent-btn button:not(.gm-control-active):focus,
-body .elementor-widget-button.transparent-btn button:not(.gm-control-active),
-body .elementor-widget-button.transparent-btn .elementor-cta .elementor-cta__button.elementor-button,
-body .elementor-widget-button.transparent-btn .elementor-kit-7 .elementor-button:focus,
-body .elementor-widget-button.transparent-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button, 
-body.elementor-page .elementor-widget-call-to-action.transparent-btn .elementor-cta__button-wrapper .elementor-button, 
-body.elementor-page .elementor-cta--skin-classic.transparent-btn .elementor-cta__button.elementor-button{
-    color: #E51836;
-    border: 3px solid #E51836;
-	background-color: transparent;
-
-}
-
-body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active):hover,
-body .elementor-widget-button.transparent-btn [type="submit"]:not(.adminbar-button):hover,
-body .elementor-widget-button.transparent-btn .elementor-button:hover,
-body .transparent-btn .elementor-button:hover,
-body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active):focus:hover,
-body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active):hover,
-body .elementor-widget-button.transparent-btn [type="submit"]:not(.adminbar-button):focus:hover,
-body .elementor-widget-button.transparent-btn button:not(.gm-control-active):focus:hover,
-body .elementor-widget-button.transparent-btn button:not(.gm-control-active):hover,
-body .elementor-widget-button.transparent-btn .elementor-cta .elementor-cta__button.elementor-button:hover,
-body .elementor-widget-button.transparent-btn .elementor-kit-7 .elementor-button:focus:hover,
-body .elementor-widget-button.transparent-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover,
-body.elementor-page .elementor-widget-call-to-action.transparent-btn .elementor-cta__button-wrapper .elementor-button:hover, 
-body.elementor-page .elementor-cta--skin-classic.transparent-btn .elementor-cta__button.elementor-button:hover{
-    color: 	#FFFFFF;
-	text-decoration: none;
-    border-color:#E51836;
-	background-color: #E51836;
-
+    border-color:#151336;
 }
 /* /white button/ */
-body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active),
-body .elementor-widget-button.white-button [type="submit"]:not(.adminbar-button),
-body .white-button .elementor-button,
-body .elementor-widget-button.white-button .elementor-button,
-body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active):focus,
-body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active),
-body .elementor-widget-button.white-button [type="submit"]:not(.adminbar-button):focus,
-body .elementor-widget-button.white-button button:not(.gm-control-active):focus,
-body .elementor-widget-button.white-button button:not(.gm-control-active),
-body .elementor-widget-button.white-button .elementor-cta .elementor-cta__button.elementor-button,
-body .elementor-widget-button.white-button .elementor-kit-7 .elementor-button:focus,
-body .elementor-widget-button.white-button .elementor-cta--skin-classic .elementor-cta__button.elementor-button,
-body.elementor-page .elementor-widget-call-to-action.white-button .elementor-cta__button-wrapper .elementor-button, 
-body.elementor-page .elementor-cta--skin-classic.white-button .elementor-cta__button.elementor-button{
+body .elementor-widget-button.white-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.white-btn [type="submit"]:not(.adminbar-button),
+body .white-btn .elementor-button,
+body .elementor-widget-button.white-btn .elementor-button,
+body .elementor-widget-button.white-btn [type="button"]:not(.gm-control-active):focus,
+body .elementor-widget-button.white-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.white-btn [type="submit"]:not(.adminbar-button):focus,
+body .elementor-widget-button.white-btn button:not(.gm-control-active):focus,
+body .elementor-widget-button.white-btn button:not(.gm-control-active),
+body .elementor-widget-button.white-btn .elementor-cta .elementor-cta__button.elementor-button,
+body .elementor-widget-button.white-btn .elementor-kit-7 .elementor-button:focus,
+body .elementor-widget-button.white-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button,
+body.elementor-page .elementor-widget-call-to-action.white-btn .elementor-cta__button-wrapper .elementor-button, 
+body.elementor-page .elementor-cta--skin-classic.white-btn .elementor-cta__button.elementor-button{
     color: #E51836;
     border: 3px solid #FFFFFF;
 	background-color: #FFFFFF;
 
 }
 
-body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active):hover,
-body .elementor-widget-button.white-button [type="submit"]:not(.adminbar-button):hover,
-body .elementor-widget-button.white-button .elementor-button:hover,
-body .white-button .elementor-button:hover,
-body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active):focus:hover,
-body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active):hover,
-body .elementor-widget-button.white-button [type="submit"]:not(.adminbar-button):focus:hover,
-body .elementor-widget-button.white-button button:not(.gm-control-active):focus:hover,
-body .elementor-widget-button.white-button button:not(.gm-control-active):hover,
-body .elementor-widget-button.white-button .elementor-cta .elementor-cta__button.elementor-button:hover,
-body .elementor-widget-button.white-button .elementor-kit-7 .elementor-button:focus:hover,
-body .elementor-widget-button.white-button .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover,
-body.elementor-page .elementor-widget-call-to-action.white-button .elementor-cta__button-wrapper .elementor-button:hover, 
-body.elementor-page .elementor-cta--skin-classic.white-button .elementor-cta__button.elementor-button:hover{
+body .elementor-widget-button.white-btn [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.white-btn [type="submit"]:not(.adminbar-button):hover,
+body .elementor-widget-button.white-btn .elementor-button:hover,
+body .white-btn .elementor-button:hover,
+body .elementor-widget-button.white-btn [type="button"]:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.white-btn [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.white-btn [type="submit"]:not(.adminbar-button):focus:hover,
+body .elementor-widget-button.white-btn button:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.white-btn button:not(.gm-control-active):hover,
+body .elementor-widget-button.white-btn .elementor-cta .elementor-cta__button.elementor-button:hover,
+body .elementor-widget-button.white-btn .elementor-kit-7 .elementor-button:focus:hover,
+body .elementor-widget-button.white-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover,
+body.elementor-page .elementor-widget-call-to-action.white-btn .elementor-cta__button-wrapper .elementor-button:hover, 
+body.elementor-page .elementor-cta--skin-classic.white-btn .elementor-cta__button.elementor-button:hover{
     color: 	#FFFFFF;
 	text-decoration: none;
-    border-color:#E51836;
-	background-color: #E51836;
+    border-color:#FFFFFF;
+	background-color: transparent;
 
-}
-
-body .elementor-widget-button.link-btn [type="button"]:not(.gm-control-active),
-body .elementor-widget-button.link-btn [type="submit"]:not(.adminbar-button),
-body .link-btn .elementor-button,
-body .elementor-widget-button.link-btn .elementor-button,
-body .elementor-widget-button.link-btn [type="button"]:not(.gm-control-active):focus,
-body .elementor-widget-button.link-btn [type="button"]:not(.gm-control-active),
-body .elementor-widget-button.link-btn [type="submit"]:not(.adminbar-button):focus,
-body .elementor-widget-button.link-btn button:not(.gm-control-active):focus,
-body .elementor-widget-button.link-btn button:not(.gm-control-active),
-body .elementor-widget-button.link-btn .elementor-cta .elementor-cta__button.elementor-button,
-body .elementor-widget-button.link-btn .elementor-kit-7 .elementor-button:focus,
-body .elementor-widget-button.link-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button,
-.link-btn{
- 	color: #606D48;
-    background-color: transparent;
-    font-size: 20px !important;
-    line-height: 30px;
-    padding: 0;
-    font-weight: 500 !important;
-    border:none;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    transition: all 0.3s;
-    box-sizing: border-box;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    max-width: 100%;
-	border-radius: 0%;
-
-}
-body .elementor-widget-button.link-btn .elementor-button:after{
-	display: none;
 }
 
 body .elementor-widget-button .elementor-button.elementor-size-xs{
@@ -632,8 +540,6 @@ body .elementor-widget-button .elementor-button.elementor-size-xs::after{
 	width: 0;
 }
 
-
-
 body .text-link [type="button"]:not(.gm-control-active),
 body .text-link [type="submit"]:not(.adminbar-button),
 body .text-link .elementor-button,
@@ -645,7 +551,7 @@ body .text-link button:not(.gm-control-active):focus,
 body .text-link button:not(.gm-control-active),
 body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button,
 body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button {
-	color: #606D48;
+	color: #D83434;
     background-color: transparent;
     font-size: 20px !important;
     line-height: 30px;
@@ -661,9 +567,7 @@ body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-but
     transition: all 0.3s;
     box-sizing: border-box;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    /* text-transform: capitalize; */
     max-width: 100%;
-    /* letter-spacing: -0.02em; */
 }
 
 
@@ -700,7 +604,7 @@ body .arrow-btn .elementor-button span.last::before {
 	width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #ECF5DC;
+    background-color: #15133651;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.3s;
@@ -719,25 +623,7 @@ body .arrow-btn .elementor-button:hover span.last::before{
 	visibility: visible;
 	right: -4px;
 }
-/* body .arrow-btn .elementor-button span.last::after{
-	margin-left: 8px;
-}
 
-body .arrow-btn .elementor-button span.last::after{
-	background-image: url('../img/arrow-right.svg');
-}
-
-body .arrow-btn.dark-blue .elementor-button span.last::after{
-	background-image: url('../img/arrow-right-light-gray.svg');
-}
-
-body .arrow-btn.dark-blue .elementor-button:hover span.last::after{
-	background-image: url('../img/arrow-right.svg');
-}
-
-body .arrow-btn.light-gray .elementor-button:hover span.last::after{
-	background-image: url('../img/arrow-right-light-gray.svg');
-} */
 
 body .text-link [type="button"]:not(.gm-control-active):hover,
 body .text-link [type="submit"]:not(.adminbar-button):hover,
@@ -751,7 +637,7 @@ body .text-link button:not(.gm-control-active):hover,
 body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button:hover,
 body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover {
 	background-color: transparent;
-	color: #606D48;
+	color: #D83434;
 	text-decoration: underline;
 	border: none;
 	/* border-bottom: 1px solid ; */
@@ -764,28 +650,12 @@ body .text-link .elementor-button:after{
     display: none !important;
 }
 
-/* body .text-link .elementor-button:hover span.last:after,
-body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button:hover span.last:after,
-body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover span.last:after {
-	border-color: #3c904b #3c904b transparent transparent !important;
-} */
 
 body .elementor-button span {
 	color: inherit;
 }
 
 /* / ----------------------Button style---------------------- / */
-
-/* 
-.elementor-container{
-	max-width: 1210px;
-	padding: 0 20px;
-	margin: 0 auto;
-} */
-
-/* .elementor-section.elementor-section-boxed > .elementor-container {
-width: calc(100% - 30px);
-} */
 
 .elementor-section.elementor-section-boxed > .elementor-container
 .elementor-container {
@@ -816,7 +686,6 @@ body select:not([class*="ui-datepicker"]) {
     padding-left: 16px;
     padding-right: 16px;
     background: url(../img/arrow-down-black.svg) no-repeat center right 18px;
-	/* background-color: #f2f2f3;  */
     background-size: 18px;
 	padding: 11px 45px 10px 0px	!important;
     margin: 0 !important;
