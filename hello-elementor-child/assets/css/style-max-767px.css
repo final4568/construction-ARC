@@ -1,0 +1,168 @@
+@media screen and (max-width:767px){
+	body {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	body .large-heading .elementor-widget-container .elementor-heading-title{
+		font-size: 60px;
+		line-height: 60px;
+	}	
+	body .elementor-widget-heading h1.elementor-heading-title,
+	body h1,
+	body .h1, 
+	body .elementor-widget-heading.h1 .elementor-heading-title, 
+	h1.elementor-cta__title.elementor-cta__content-item  {
+		font-size: 40px;
+		line-height: 48px;
+	}
+
+	body .elementor-widget-heading h2.elementor-heading-title,
+	body h2,
+	body .h2, 
+	body .elementor-widget-heading.h2 .elementor-heading-title, 
+	h2.elementor-cta__title.elementor-cta__content-item,
+	body .elementor-image-box-content h2.elementor-image-box-title,
+	.elementor-posts .elementor-post__card h2.elementor-post__title,
+	.elementor-posts h2.elementor-post__title {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	body .elementor-widget-heading h3.elementor-heading-title,
+	body h3,
+	body .h3, 
+	body .elementor-widget-heading.h3 .elementor-heading-title, 
+	h3.elementor-cta__title.elementor-cta__content-item,
+	body .elementor-image-box-content h3.elementor-image-box-title,
+	.elementor-posts .elementor-post__card h3.elementor-post__title,
+	.elementor-posts h3.elementor-post__title {
+		font-size: 28px; 
+		line-height: 36px;
+	}
+
+	body .elementor-widget-heading h4.elementor-heading-title,
+	body h4,
+	body .h4, 
+	body .elementor-widget-heading.h4 .elementor-heading-title, 
+	h4.elementor-cta__title.elementor-cta__content-item,
+	body .elementor-image-box-content h4.elementor-image-box-title,
+	.elementor-posts .elementor-post__card h4.elementor-post__title,
+	.elementor-posts h4.elementor-post__title {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	body .elementor-widget-heading h5.elementor-heading-title,
+	body h5,
+	body .h5, 
+	body .elementor-widget-heading.h5 .elementor-heading-title, 
+	h5.elementor-cta__title.elementor-cta__content-item,
+	body .elementor-image-box-content h5.elementor-image-box-title,
+	.elementor-posts .elementor-post__card h5.elementor-post__title,
+	.elementor-posts h5.elementor-post__title {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	body .elementor-widget-heading h6.elementor-heading-title,
+	body h6,
+	body .h6, 
+	body .elementor-widget-heading.h6 .elementor-heading-title, 
+	h6.elementor-cta__title.elementor-cta__content-item,
+	body .elementor-image-box-content h6.elementor-image-box-title,
+	.elementor-posts .elementor-post__card h6.elementor-post__title,
+	.elementor-posts h6.elementor-post__title {
+		font-size:18px;
+		line-height: 26px;
+	}
+
+	body .small-paragraph.elementor-widget-text-editor, 
+	body .small-paragraph.elementor-widget-text-editor p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	body .large-paragraph.elementor-widget-text-editor, 
+	body .large-paragraph.elementor-widget-text-editor p{
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+	body .small-text.elementor-widget-text-editor, 
+	body .small-text.elementor-widget-text-editor p{
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	.elementor-button:after,
+	[type="button"]:after {
+		width: 211px;
+	}
+
+	.hero-down-arrow .elementor-icon{
+        border: 5px solid #dbe9ee;
+    }
+    .yellow-bg-divider .hero-down-arrow .elementor-icon{
+        border-color: #f3e2a7;
+    }
+
+	html body .gform_wrapper ul.gfield_checkbox li label {
+		padding-left: 36px;
+		font-size: 16px;
+		line-height: 22px;
+		margin-top: 3px;
+	}
+	/* ---------------------------- code for cookies ---------------------------- */
+	#cookie-notice .cookie-notice-container {
+		padding: 25px 40px;
+	}
+
+	#cookie-notice .cookies-message {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+		padding-bottom: 25px;
+		margin: 0 auto;
+	}
+
+	#cookie-notice .cookies-button-container {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	#cookie-notice #cn-notice-text {
+		display: block;
+	}
+	body .elementor-widget-button [type="button"]:not(.gm-control-active), body .elementor-widget-button [type="submit"]:not(.adminbar-button), body .elementor-button, body .elementor-widget-button .elementor-button, body .elementor-widget-button [type="button"]:not(.gm-control-active):focus, body .elementor-widget-button [type="button"]:not(.gm-control-active), body .elementor-widget-button [type="submit"]:not(.adminbar-button):focus, body .elementor-widget-button button:not(.gm-control-active):focus, body .elementor-widget-button button:not(.gm-control-active), body .elementor-widget-button .elementor-cta .elementor-cta__button.elementor-button, body .elementor-widget-button .elementor-kit-7 .elementor-button:focus, body .elementor-widget-button .elementor-cta--skin-classic .elementor-cta__button.elementor-button{
+		width: 100%;
+	}
+
+	.styledSelect{
+		height: 46px
+	}
+	html body .gform_wrapper form ul.gform_fields li.gfield{
+		margin-bottom: 56px !important;
+	}
+	html body .gform_wrapper form ul.gform_fields li.gfield:last-child{
+		margin-bottom: 44px !important;
+	}
+
+	html body .contact-page-form form ul.gform_fields li.gfield{
+		margin-bottom: 44px!important;
+	}
+	
+	html body .contact-page-form form ul.gform_fields li.gfield:last-child{
+		margin-bottom:29px!important
+	}
+	
+	/* -------------------------- end code for cookies -------------------------- */
+}
+
+@media screen and (max-width: 480px){
+	html body .gform_wrapper form .gform_footer input[type="submit"]{
+		max-width: 350px;
+	}
+}
+

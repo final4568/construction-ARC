@@ -1,0 +1,1672 @@
+/*
+Table of Contents
+1. Generic ----------------------------------------
+01. Fonts -------------------------------------
+02. Base --------------------------------------
+03. Helpers -----------------------------------
+2. Page Sections ----------------------------------
+01. Wrapper -----------------------------------
+02. Header ------------------------------------
+03. Main Content ------------------------------
+04. Footer ------------------------------------
+*/
+
+/* ==========================================================================
+I. Generic
+========================================================================== */
+
+/* ------------------------------------------------------------
+Fonts
+------------------------------------------------------------ */
+
+/*
+font-family: 'Lato', sans-serif;
+*/
+
+
+/* ------------------------------------------------------------
+Base
+------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+html {
+	color: #000000;
+	font-size: 10px;
+	line-height: 1.5;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+::-ms-clear {
+	display: none;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+input,
+select,
+input[type="search"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+img {
+	max-width: 100%;
+}
+
+.elementor-widget-image .elementor-image>a img[src$=".svg"], 
+.elementor-widget-image .elementor-image figure>a img[src$=".svg"]{
+	width: auto !important;
+}
+.elementor-widget-image a img[src$=".svg"] {
+    width: auto !important;
+}
+
+body p,
+.elementor-widget-container,
+.elementor-image-box-description {
+	font-size: inherit;
+	font-family: inherit;
+	line-height: inherit;
+	color: inherit;
+	font-weight: inherit;
+}
+
+.elementor-text-editor p {
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+}
+
+.elementor a,
+a {
+	font-family: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+	color:	#606D48;
+	font-size: inherit;
+	transition: all 0.3s;
+}
+
+.elementor p a {
+	font-weight: 700;
+	text-decoration: underline;
+	word-break: break-word;
+}
+
+.elementor a:hover,
+a:hover {
+	text-decoration: none;
+}
+
+body a,
+body p a {
+	color:	#606D48;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+body a,
+body p a:hover {
+	text-decoration: none;
+	color:	#606D48;
+}
+
+/* / =----------------------------UL/OL---------------------------- / */
+.site-main ul:not([class]) {
+	font-size: inherit;
+	list-style: none;
+}
+
+.site-main ol {
+	list-style: decimal outside;
+	font-size: inherit;
+	padding-left: 27px;
+}
+
+body .site-main ul:not([class]) li,
+body .site-main ul:not([class]) li ol li ul:not([class]) li {
+	font-size: inherit;
+    line-height: 28px;
+    font-family: inherit;
+    font-weight: 600;
+    color: inherit;
+    margin-bottom: 20px;
+    padding-left: 26px;
+    position: relative;	
+}
+
+.site-main ol li,
+.site-main ul:not([class]) li ol li {
+	font-size: inherit;
+    line-height: 28px;
+    font-family: inherit;
+    font-weight: 600;
+    color: inherit;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.site-main ol ol,
+.site-main ul:not([class]) ul:not([class]),
+.site-main ol ul:not([class]),
+.site-main ul:not([class]) ol {
+	margin-bottom: 0;
+	margin-left: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.site-main ul:not([class]):not(.elementor-editor-element-settings):not(.elementor-select-preset-list):not(.gform_fields) {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.site-main ul:not([class]):not(.elementor-editor-element-settings):not(.elementor-select-preset-list):not(.gform_fields):not(.camps_and_programs) li:before,
+.site-main ul:not([class]) li ol li ul:not([class]) li:after {
+	content: "";
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    width: 5px;
+    height: 5px;
+    background-color: #91A372;
+    border-radius: 50%;
+}
+
+.site-main ol > li::marker, 
+.site-main ul:not([class]) li ol > li::marker{
+    color:#91A372;
+	content: "0" counter(list-item)":";
+}
+
+.site-main ul:not([class]) ol li::before {
+	display: none !important;
+}
+
+
+/* / =----------------------------UL/OL---------------------------- / */
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+table:last-child,
+blockquote:last-child {
+	margin-bottom: 0;	
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color:	#2B2E2C;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+	background-color: #FFFFFF;
+}
+
+html body .elementor-cta--skin-classic .elementor-cta__content-item{
+	color: 	#231F20;
+}
+
+body .large-heading .elementor-widget-container .elementor-heading-title{
+	font-family: "Forum", Georgia, serif;
+    font-size: 114px;
+    font-weight: 400;
+	line-height: 114px;
+}
+
+body .elementor-widget-heading h1.elementor-heading-title,
+body h1,
+body .h1, 
+body .elementor-widget-heading.h1 .elementor-heading-title, 
+h1.elementor-cta__title.elementor-cta__content-item {
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+	line-height: 60px; /* 100px */
+	text-transform: uppercase;
+
+}
+
+body .elementor-widget-heading h2.elementor-heading-title,
+body h2,
+body .h2, 
+body .elementor-widget-heading.h2 .elementor-heading-title, 
+h2.elementor-cta__title.elementor-cta__content-item,
+body .elementor-image-box-content h2.elementor-image-box-title,
+.elementor-posts .elementor-post__card h2.elementor-post__title,
+.elementor-posts h2.elementor-post__title {
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+	line-height: 52px; /* 80px */
+	text-transform: uppercase;
+
+	/* letter-spacing: -0.02em; */
+}
+
+body .elementor-widget-heading h3.elementor-heading-title,
+body h3,
+body .h3, 
+body .elementor-widget-heading.h3 .elementor-heading-title, 
+h3.elementor-cta__title.elementor-cta__content-item,
+body .elementor-image-box-content h3.elementor-image-box-title,
+.elementor-posts .elementor-post__card h3.elementor-post__title,
+.elementor-posts h3.elementor-post__title {
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+	text-transform: uppercase;
+	line-height: 44px; /* 52px */
+	/* letter-spacing: -0.02em; */
+}
+
+body .elementor-widget-heading h4.elementor-heading-title,
+body h4,
+body .h4, 
+body .elementor-widget-heading.h4 .elementor-heading-title, 
+h4.elementor-cta__title.elementor-cta__content-item,
+body .elementor-image-box-content h4.elementor-image-box-title,
+.elementor-posts .elementor-post__card h4.elementor-post__title,
+.elementor-posts h4.elementor-post__title {
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+	text-transform: uppercase;
+	line-height: 36px; /* 40px */
+	/* letter-spacing: -0.02em; */
+}
+
+body .elementor-widget-heading h5.elementor-heading-title,
+body h5,
+body .h5, 
+body .elementor-widget-heading.h5 .elementor-heading-title, 
+h5.elementor-cta__title.elementor-cta__content-item,
+body .elementor-image-box-content h5.elementor-image-box-title,
+.elementor-posts .elementor-post__card h5.elementor-post__title,
+.elementor-posts h5.elementor-post__title {
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+	line-height: 30px; /* 40px */
+	/* letter-spacing: -0.02em; */
+}
+
+
+body .elementor-widget-heading h6.elementor-heading-title,
+body h6,
+body .h6, 
+body .elementor-widget-heading.h6 .elementor-heading-title, 
+h6.elementor-cta__title.elementor-cta__content-item,
+body .elementor-image-box-content h6.elementor-image-box-title,
+.elementor-posts .elementor-post__card h6.elementor-post__title,
+.elementor-posts h6.elementor-post__title {
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+	line-height:28px; /* 40px */
+	/* letter-spacing: -0.02em */
+}
+body .small-paragraph p,
+body .small-paragraph.elementor-widget-text-editor, 
+body .small-paragraph.elementor-widget-text-editor p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+body .large-paragraph.elementor-widget-text-editor, 
+body .large-paragraph.elementor-widget-text-editor p{
+    font-size: 24px;
+    line-height: 38px;
+}
+
+/* ------------------------------------------------------------
+Helpers
+------------------------------------------------------------ */
+
+.invisible {
+	visibility: hidden !important;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	-webkit-appearance: none;
+}
+
+/* / --------Button style------------ / */
+.elementor-button:after,
+[type="button"]:after {
+	content: "";
+	width: 211px;
+	display: block;
+	max-width: 100%;
+}
+
+body .elementor-widget-button [type="button"]:not(.gm-control-active),
+body .elementor-widget-button [type="submit"]:not(.adminbar-button),
+body .elementor-button,
+body .elementor-widget-button .elementor-button,
+body .elementor-widget-button [type="button"]:not(.gm-control-active):focus,
+body .elementor-widget-button [type="button"]:not(.gm-control-active),
+body .elementor-widget-button [type="submit"]:not(.adminbar-button):focus,
+body .elementor-widget-button button:not(.gm-control-active):focus,
+body .elementor-widget-button button:not(.gm-control-active),
+body .elementor-widget-button .elementor-cta .elementor-cta__button.elementor-button,
+body .elementor-widget-button .elementor-kit-7 .elementor-button:focus,
+body .elementor-widget-button .elementor-cta--skin-classic .elementor-cta__button.elementor-button, 
+body.elementor-page .elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-button, 
+body.elementor-page .elementor-cta--skin-classic .elementor-cta__button.elementor-button{
+	color: 	#FFFFFF;
+    background-color: #E51836;
+    font-size: 18px !important;
+    line-height: 18px;
+    padding: 17px 27px;
+    font-weight: 700 !important;
+    border: 3px solid  #E51836;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    max-width: 100%;
+	text-transform: capitalize;
+}
+
+.elementor-button:after,
+[type="button"]:after {
+	content: "";
+	width: 211px;
+	display: block;
+	max-width: 100%;
+}
+
+body .elementor-widget-button [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button [type="submit"]:not(.adminbar-button):hover,
+body .elementor-widget-button .elementor-button:hover,
+body .elementor-button:hover,
+body .elementor-widget-button [type="button"]:not(.gm-control-active):focus:hover,
+body .elementor-widget-button [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button [type="submit"]:not(.adminbar-button):focus:hover,
+body .elementor-widget-button button:not(.gm-control-active):focus:hover,
+body .elementor-widget-button button:not(.gm-control-active):hover,
+body .elementor-widget-button .elementor-cta .elementor-cta__button.elementor-button:hover,
+body .elementor-widget-button .elementor-kit-7 .elementor-button:focus:hover,
+body .elementor-widget-button .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover, 
+body.elementor-page .elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-button:hover, 
+body.elementor-page .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover{
+	background-color: #FFF0F2;
+	color: #C30F29;
+	text-decoration: none;
+	border-color: #C30F29 ;
+}
+
+body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.black-btn [type="submit"]:not(.adminbar-button),
+body .black-btn .elementor-button,
+body .elementor-widget-button.black-btn .elementor-button,
+body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active):focus,
+body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.black-btn [type="submit"]:not(.adminbar-button):focus,
+body .elementor-widget-button.black-btn button:not(.gm-control-active):focus,
+body .elementor-widget-button.black-btn button:not(.gm-control-active),
+body .elementor-widget-button.black-btn .elementor-cta .elementor-cta__button.elementor-button,
+body .elementor-widget-button.black-btn .elementor-kit-7 .elementor-button:focus,
+body .elementor-widget-button.black-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button, 
+body.elementor-page .elementor-widget-call-to-action.black-btn .elementor-cta__button-wrapper .elementor-button, 
+body.elementor-page .elementor-cta--skin-classic.black-btn .elementor-cta__button.elementor-button{
+    color: #FFFFFF;
+    background-color: #231F20;
+    border: 3px solid #231F20;
+}
+
+body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.black-btn [type="submit"]:not(.adminbar-button):hover,
+body .elementor-widget-button.black-btn .elementor-button:hover,
+body .black-btn .elementor-button:hover,
+body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.black-btn [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.black-btn [type="submit"]:not(.adminbar-button):focus:hover,
+body .elementor-widget-button.black-btn button:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.black-btn button:not(.gm-control-active):hover,
+body .elementor-widget-button.black-btn .elementor-cta .elementor-cta__button.elementor-button:hover,
+body .elementor-widget-button.black-btn .elementor-kit-7 .elementor-button:focus:hover,
+body .elementor-widget-button.black-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover, 
+body.elementor-page .elementor-widget-call-to-action.black-btn .elementor-cta__button-wrapper .elementor-button:hover, 
+body.elementor-page .elementor-cta--skin-classic.black-btn .elementor-cta__button.elementor-button:hover{
+	background-color: #F4F4F4;
+    color: #231F20;
+	text-decoration: none;
+    border-color:#231F20;
+}
+
+body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.transparent-btn [type="submit"]:not(.adminbar-button),
+body .transparent-btn .elementor-button,
+body .elementor-widget-button.transparent-btn .elementor-button,
+body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active):focus,
+body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.transparent-btn [type="submit"]:not(.adminbar-button):focus,
+body .elementor-widget-button.transparent-btn button:not(.gm-control-active):focus,
+body .elementor-widget-button.transparent-btn button:not(.gm-control-active),
+body .elementor-widget-button.transparent-btn .elementor-cta .elementor-cta__button.elementor-button,
+body .elementor-widget-button.transparent-btn .elementor-kit-7 .elementor-button:focus,
+body .elementor-widget-button.transparent-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button, 
+body.elementor-page .elementor-widget-call-to-action.transparent-btn .elementor-cta__button-wrapper .elementor-button, 
+body.elementor-page .elementor-cta--skin-classic.transparent-btn .elementor-cta__button.elementor-button{
+    color: #E51836;
+    border: 3px solid #E51836;
+	background-color: transparent;
+
+}
+
+body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.transparent-btn [type="submit"]:not(.adminbar-button):hover,
+body .elementor-widget-button.transparent-btn .elementor-button:hover,
+body .transparent-btn .elementor-button:hover,
+body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.transparent-btn [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.transparent-btn [type="submit"]:not(.adminbar-button):focus:hover,
+body .elementor-widget-button.transparent-btn button:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.transparent-btn button:not(.gm-control-active):hover,
+body .elementor-widget-button.transparent-btn .elementor-cta .elementor-cta__button.elementor-button:hover,
+body .elementor-widget-button.transparent-btn .elementor-kit-7 .elementor-button:focus:hover,
+body .elementor-widget-button.transparent-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover,
+body.elementor-page .elementor-widget-call-to-action.transparent-btn .elementor-cta__button-wrapper .elementor-button:hover, 
+body.elementor-page .elementor-cta--skin-classic.transparent-btn .elementor-cta__button.elementor-button:hover{
+    color: 	#FFFFFF;
+	text-decoration: none;
+    border-color:#E51836;
+	background-color: #E51836;
+
+}
+/* /white button/ */
+body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.white-button [type="submit"]:not(.adminbar-button),
+body .white-button .elementor-button,
+body .elementor-widget-button.white-button .elementor-button,
+body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active):focus,
+body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.white-button [type="submit"]:not(.adminbar-button):focus,
+body .elementor-widget-button.white-button button:not(.gm-control-active):focus,
+body .elementor-widget-button.white-button button:not(.gm-control-active),
+body .elementor-widget-button.white-button .elementor-cta .elementor-cta__button.elementor-button,
+body .elementor-widget-button.white-button .elementor-kit-7 .elementor-button:focus,
+body .elementor-widget-button.white-button .elementor-cta--skin-classic .elementor-cta__button.elementor-button,
+body.elementor-page .elementor-widget-call-to-action.white-button .elementor-cta__button-wrapper .elementor-button, 
+body.elementor-page .elementor-cta--skin-classic.white-button .elementor-cta__button.elementor-button{
+    color: #E51836;
+    border: 3px solid #FFFFFF;
+	background-color: #FFFFFF;
+
+}
+
+body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.white-button [type="submit"]:not(.adminbar-button):hover,
+body .elementor-widget-button.white-button .elementor-button:hover,
+body .white-button .elementor-button:hover,
+body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.white-button [type="button"]:not(.gm-control-active):hover,
+body .elementor-widget-button.white-button [type="submit"]:not(.adminbar-button):focus:hover,
+body .elementor-widget-button.white-button button:not(.gm-control-active):focus:hover,
+body .elementor-widget-button.white-button button:not(.gm-control-active):hover,
+body .elementor-widget-button.white-button .elementor-cta .elementor-cta__button.elementor-button:hover,
+body .elementor-widget-button.white-button .elementor-kit-7 .elementor-button:focus:hover,
+body .elementor-widget-button.white-button .elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover,
+body.elementor-page .elementor-widget-call-to-action.white-button .elementor-cta__button-wrapper .elementor-button:hover, 
+body.elementor-page .elementor-cta--skin-classic.white-button .elementor-cta__button.elementor-button:hover{
+    color: 	#FFFFFF;
+	text-decoration: none;
+    border-color:#E51836;
+	background-color: #E51836;
+
+}
+
+body .elementor-widget-button.link-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.link-btn [type="submit"]:not(.adminbar-button),
+body .link-btn .elementor-button,
+body .elementor-widget-button.link-btn .elementor-button,
+body .elementor-widget-button.link-btn [type="button"]:not(.gm-control-active):focus,
+body .elementor-widget-button.link-btn [type="button"]:not(.gm-control-active),
+body .elementor-widget-button.link-btn [type="submit"]:not(.adminbar-button):focus,
+body .elementor-widget-button.link-btn button:not(.gm-control-active):focus,
+body .elementor-widget-button.link-btn button:not(.gm-control-active),
+body .elementor-widget-button.link-btn .elementor-cta .elementor-cta__button.elementor-button,
+body .elementor-widget-button.link-btn .elementor-kit-7 .elementor-button:focus,
+body .elementor-widget-button.link-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button,
+.link-btn{
+ 	color: #606D48;
+    background-color: transparent;
+    font-size: 20px !important;
+    line-height: 30px;
+    padding: 0;
+    font-weight: 500 !important;
+    border:none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    max-width: 100%;
+	border-radius: 0%;
+
+}
+body .elementor-widget-button.link-btn .elementor-button:after{
+	display: none;
+}
+
+body .elementor-widget-button .elementor-button.elementor-size-xs{
+    font-size: 14px !important;
+    line-height: 16px;
+    padding: 13px 27px;
+    font-weight: 600 !important;
+}
+
+body .elementor-widget-button .elementor-button.elementor-size-xs::after{
+    content: "";
+	width: 0;
+}
+
+
+
+body .text-link [type="button"]:not(.gm-control-active),
+body .text-link [type="submit"]:not(.adminbar-button),
+body .text-link .elementor-button,
+body .text-link .elementor-button:focus,
+body .text-link [type="button"]:not(.gm-control-active):focus,
+body .text-link [type="button"]:not(.gm-control-active),
+body .text-link [type="submit"]:not(.adminbar-button):focus,
+body .text-link button:not(.gm-control-active):focus,
+body .text-link button:not(.gm-control-active),
+body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button,
+body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button {
+	color: #606D48;
+    background-color: transparent;
+    font-size: 20px !important;
+    line-height: 30px;
+    padding: 0;
+    font-weight: 500 !important;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 0;
+    -webkit-appearance: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    /* text-transform: capitalize; */
+    max-width: 100%;
+    /* letter-spacing: -0.02em; */
+}
+
+
+body .text-link .elementor-button span.last,
+body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button span.last,
+body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button span.last,
+body .arrow-btn .elementor-button span.last{
+	display: inline-block;
+	position: relative;
+	text-transform: lowercase;
+}
+
+body .text-link .elementor-button span.last:after,
+body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button span.last:after,
+body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button span.last:after,
+body .arrow-btn .elementor-button span.last::after {
+	content: "";
+    width: 16px !important;
+    height: 10px;
+    display: inline-block;
+    background: url("../img/button-arrow.svg") center center no-repeat;
+    background-size: contain;
+	margin-bottom: 2px;
+    margin-left: 7px;
+    transition: all 0.3s;
+	position: relative;
+	z-index: 2;
+}
+body .text-link .elementor-button span.last::before,
+body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button span.last::before,
+body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button span.last::before,
+body .arrow-btn .elementor-button span.last::before {
+	content: "";
+	width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ECF5DC;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	display: inline-block;
+	right: -4px;
+    top: 50%;
+    position: absolute;
+    transform: translatey(-50%);
+	z-index: 1;
+}
+body .text-link .elementor-button:hover span.last::before,
+body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button:hover span.last::before,
+body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover span.last::before,
+body .arrow-btn .elementor-button:hover span.last::before{
+	opacity: 1;
+	visibility: visible;
+	right: -4px;
+}
+/* body .arrow-btn .elementor-button span.last::after{
+	margin-left: 8px;
+}
+
+body .arrow-btn .elementor-button span.last::after{
+	background-image: url('../img/arrow-right.svg');
+}
+
+body .arrow-btn.dark-blue .elementor-button span.last::after{
+	background-image: url('../img/arrow-right-light-gray.svg');
+}
+
+body .arrow-btn.dark-blue .elementor-button:hover span.last::after{
+	background-image: url('../img/arrow-right.svg');
+}
+
+body .arrow-btn.light-gray .elementor-button:hover span.last::after{
+	background-image: url('../img/arrow-right-light-gray.svg');
+} */
+
+body .text-link [type="button"]:not(.gm-control-active):hover,
+body .text-link [type="submit"]:not(.adminbar-button):hover,
+body .text-link .elementor-button:hover,
+body .text-link .elementor-button:focus:hover,
+body .text-link [type="button"]:not(.gm-control-active):focus:hover,
+body .text-link [type="button"]:not(.gm-control-active):hover,
+body .text-link [type="submit"]:not(.adminbar-button):focus:hover,
+body .text-link button:not(.gm-control-active):focus:hover,
+body .text-link button:not(.gm-control-active):hover,
+body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button:hover,
+body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover {
+	background-color: transparent;
+	color: #606D48;
+	text-decoration: underline;
+	border: none;
+	/* border-bottom: 1px solid ; */
+}
+
+
+
+
+body .text-link .elementor-button:after{
+    display: none !important;
+}
+
+/* body .text-link .elementor-button:hover span.last:after,
+body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button:hover span.last:after,
+body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button:hover span.last:after {
+	border-color: #3c904b #3c904b transparent transparent !important;
+} */
+
+body .elementor-button span {
+	color: inherit;
+}
+
+/* / ----------------------Button style---------------------- / */
+
+/* 
+.elementor-container{
+	max-width: 1210px;
+	padding: 0 20px;
+	margin: 0 auto;
+} */
+
+/* .elementor-section.elementor-section-boxed > .elementor-container {
+width: calc(100% - 30px);
+} */
+
+.elementor-section.elementor-section-boxed > .elementor-container
+.elementor-container {
+  width: 100%;
+}
+/* ------------------------------------------------------------
+Select Dropdown Custom Style
+------------------------------------------------------------ */
+/* gravity form select dropdowns */
+.ginput_container_select .select{
+	position: relative;
+}
+
+.ginput_container_select .select select,
+.gfield .clear-multi .ginput_container_date .select select,
+.gfield .gfield_time_ampm .select select,
+body select:not([class*="ui-datepicker"]) {
+	width: 100%;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    border-bottom: 2px solid #676163;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: url(../img/arrow-down-black.svg) no-repeat center right 18px;
+	/* background-color: #f2f2f3;  */
+    background-size: 18px;
+	padding: 11px 45px 10px 0px	!important;
+    margin: 0 !important;
+}
+
+body .gform_wrapper li.gfield_error .clear-multi .ginput_container_date .select {
+	border-color: #e75454;
+}
+
+.s-hidden {
+	display: none;
+}
+
+.styledSelect {
+	padding: 11px 45px 10px 0px;
+	position: relative;
+	height: 44px;
+	z-index: 4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	border-radius: 0px !important;
+	background-color: transparent;
+	border-bottom: 2px solid#676163;
+	box-shadow: none;
+	font-size: 22px !important;
+	line-height: 22px;
+	color: #676163 !important;
+	text-transform: none;
+	letter-spacing: 0px;
+  	transition: all 0.3s;
+}
+
+.styledSelect:focus{
+  	border: 2px solid #a65d43;
+}
+
+body .gform_wrapper .gfield_required {
+	color: rgb(71 71 72 / 40%);
+    font-weight: 400 !important;
+    margin-left: 2px;
+    text-transform: lowercase;
+    letter-spacing: -0.3px;
+}
+
+body .gform_wrapper .gfield_time_ampm select {
+	width: 80px !important;
+	padding-bottom: 17px !important;
+	padding-top: 17px !important;
+}
+
+/* .styledSelect.active {
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .15);
+} */
+
+.styledSelect:after {
+	content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% + 1px));
+    right: 0;
+    line-height: 1;
+    width: 24px;
+    height: 24px;
+    background: url('../img/form-arrow.svg') no-repeat center center;
+	background-size: auto;
+}
+
+.styledSelect.active:after {
+  transform: translateY(-50%) rotate(180deg);
+  /* top: 7px; */
+}
+
+body .options {
+	display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    left: 0;
+    z-index: 9;
+    margin: 0 !important;
+    padding: 0;
+    list-style: none;
+    background: #FFFFFF;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    border: none;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+
+}
+
+body form .options li {
+	margin: 0;
+    /* padding: 10px 20px 10px; */
+	font-size: 18px;
+	line-height: 28px;
+	/* letter-spacing: -0.18px; */
+	color: #676163;
+	text-transform: none;
+	/* height: 40px; */
+	cursor: pointer;
+}
+body form .select .options{
+	padding: 12px 16px;
+}
+body form .options li:not(:last-child) {
+	padding-bottom: 20px;
+}
+
+body form .options li:hover {
+	/* background-color: #DBE9EE; */
+	color: #231F20;
+	text-decoration: underline;
+}
+
+.options li::before {
+	display: none !important;
+}
+
+.options li[rel=""] {
+	display: none;
+}
+
+.options li.active {
+	/* background-color: #DBE9EE; */
+	position: relative;
+	cursor: default;
+	pointer-events: none;
+	text-decoration: underline;
+	color: #231F20 !important;
+}
+
+.styledSelect.noplaceholder .text-ellipses {
+	color: #676163;
+}
+html body .styledSelect .text-ellipses{
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+
+}
+html body .contact-page-form form ul.gform_fields .styledSelect{
+	height: 46px;
+}
+/* ------------------------------------------------------------
+End of Select Dropdown Custom Style
+------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------
+Checkbox custom style
+------------------------------------------------------------ */
+
+/* html structure */
+/* <label class="checkbox-container">One
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label> */
+/* end html structure */
+
+/* Create a custom checkbox */
+.checkbox-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.checkbox-container .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input~.checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked~.checkmark {
+	background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-container .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked~.checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+	left: 11px;
+	top: 6px;
+	width: 5px;
+	height: 12px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* ------------------------------------------------------------
+End of checkbox custom style
+------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+Checkbox custom style
+------------------------------------------------------------ */
+/* html structure */
+/* <label class="radio-container">One
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label> */
+
+/* The container */
+.radio-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radio-container .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input~.checkmark {
+	background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked~.checkmark {
+	background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-container .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked~.checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+	top: 7px;
+	left: 7.5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* ------------------------------------------------------------
+End of checkbox custom style
+------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+gravity form style
+------------------------------------------------------------ */
+html body .gform_wrapper *:focus {
+	outline: none;
+}
+
+html body .gform_wrapper div.validation_error html body .gform_wrapper form {
+	border: 2px solid #666;
+	padding: 0;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield {
+	margin-top: 0;
+	margin-bottom: 44px !important;
+	border: 0;
+	background: none;
+	vertical-align: top;
+	/* letter-spacing: -0.14px; */
+	padding-left: 0;
+	padding-right: 0;
+	/* width: 100%; */
+}
+
+.gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
+	max-width: 100% !important;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield.bottom-info {
+	padding-top: 0px !important;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield .ginput_container {
+	margin-top: 0 !important;
+}
+
+html body .gform_wrapper .top_label .gfield_label,
+html body .gform_wrapper .gform_wrapper legend.gfield_label {
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+    color: #474747;
+    line-height: 24px;
+	margin-bottom: 8px;
+	letter-spacing: -0.5px;
+	margin-top: 0 !important;
+	display: none;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="text"],
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="email"],
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="number"],
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="tel"], 
+html body .gform_wrapper form ul.gform_fields li.gfield textarea {
+	margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0px !important;
+    background-color: transparent;
+    border-bottom: 2px solid #676163;
+    box-shadow: none;
+    font-size: 22px !important;
+    line-height: 22px !important;
+    color: #231F20 !important;
+    width: 100% !important;
+    padding: 7px 0px 6px 0!important;
+    transition: all 0.3s;
+    height: 44px;
+}
+input[type="text"], input[type="date"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="url"], select, textarea{
+	border: none;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="text"]::-webkit-input-placeholder,
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="email"]::-webkit-input-placeholder,
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="number"]::-webkit-input-placeholder,
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="tel"]::-webkit-input-placeholder, 
+html body .gform_wrapper form ul.gform_fields li.gfield textarea::-webkit-input-placeholder, 
+html body .gform_wrapper form ul.gform_fields li.gfield .styledSelect .text-ellipses {
+	color: #676163;
+}
+
+/* html body .gform_wrapper form ul.gform_fields li.gfield .styledSelect .text-ellipses {
+	color:#676163 ;
+} */
+
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="text"]:focus,
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="email"]:focus,
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="number"]:focus,
+html body .gform_wrapper form ul.gform_fields li.gfield input[type="tel"]:focus, 
+html body .gform_wrapper form ul.gform_fields li.gfield textarea:focus, 
+html body .gform_wrapper form ul.gform_fields li.gfield .styledSelect.active {
+	border-bottom: 2px solid #231F20;  
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield textarea {
+	height: 195px;
+	resize: none;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	/* -webkit-box-shadow: 0 0 0 30px #ffffff inset !important; */
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+	/* -webkit-text-fill-color: #666666 !important; */
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield .styledSelect .text-ellipses.valueAdded{
+    color: #231F20 !important;
+}
+
+/* html body .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+	padding: 16px 15px;
+	font-size: 18px;
+	line-height: 1;
+} */
+
+html body .gform_wrapper form ul.gform_fields li.gfield.gfield_error:not(.top-text):not(.recaptcha-field) {
+	margin-bottom: 15px !important;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield.recaptcha-field {
+	padding-top: 10px !important;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield .ginput_container.ginput_recaptcha {
+	margin-top: 0 !important;
+}
+
+.gform_legacy_markup_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_legacy_markup_wrapper li.gfield_error textarea{
+	border: none !important;
+}
+
+html body .gform_wrapper li.gfield_error input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"])::-webkit-input-placeholder, 
+html body .gform_wrapper .gform_wrapper li.gfield_error textarea::-webkit-input-placeholder, .gfield_error .styledSelect .text-ellipses{
+    color: #B00821 !important;
+}
+
+
+
+
+html body .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description {
+	font-size: 16px;
+	line-height: 24px;
+	color: 	#B00821;
+	font-family:  "Poppins", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	padding-top: 5px;
+	line-height: normal;
+	/* letter-spacing: -0.13px; */
+	padding-right: 7px;
+	padding-top: 0;
+	/* display: none; */
+}
+html body .gform_wrapper li.gfield .ginput_container{
+	margin-bottom: 6px !important;
+}
+
+
+
+html body .gform_wrapper .validation_message {
+	font-size: 16px;
+	line-height: 24px;
+	color: 	#B00821;
+	font-family:  "Poppins", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	padding-top: 6px;
+}
+body .gform_legacy_markup_wrapper .field_description_below .gfield_description{
+	/* padding-top: 6px !important; */
+}
+
+html body .gform_wrapper li.gfield_error .gfield_required{
+    color: 	#B00821;
+	text-transform: capitalize;
+}
+
+html body .gform_wrapper div.validation_error {
+	border: 0;
+	font-size: 16px;
+	line-height: 24px;
+	color: 	#B00821;
+	display: none;
+}
+
+html body .gform_wrapper li.gfield_error input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]),
+html body .gform_wrapper .gform_wrapper li.gfield_error textarea, 
+.gfield_error .styledSelect {
+	border-bottom : 2px solid #B00821 !important;
+}
+
+
+/* -------------------------------------------------------
+Radio and Checkbox Styling
+---------------------------------------------------------- */
+
+html body .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked+label,
+html body .gform_wrapper .gfield_radio li input[type="radio"]:checked+label {
+	font-weight: normal;
+}
+
+html body .gform_wrapper ul.gform_fields li.gfield.gfield_error+li.gfield.gfield_error {
+	margin-top: 0;
+}
+
+html body .gform_wrapper li.gfield_error div.ginput_complex.ginput_container label,
+html body .gform_wrapper li.gfield_error ul.gfield_checkbox,
+html body .gform_wrapper li.gfield_error ul.gfield_radio {
+	color: #000;
+}
+
+html body .gform_wrapper ul.gfield_radio li {
+	display: block;
+	position: relative;
+	margin-bottom: 20px;
+	/* cursor: pointer; */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+html body .gform_wrapper ul.gfield_radio li:before {
+	display: none !important;
+}
+
+html body .gform_wrapper ul.gfield_radio li input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+html body .gform_wrapper ul.gfield_radio li label {
+	padding-left: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+html body .gform_wrapper ul.gfield_radio li label:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+	border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #8c8c8c;
+}
+
+html body .gform_wrapper ul.gfield_radio li input~label:hover:before {
+	/* background-color: #ccc; */
+    border-color: #82965C;
+}
+
+html body .gform_wrapper ul.gfield_radio li:hover input~label {
+	font-weight: normal;
+}
+
+html body .gform_wrapper ul.gfield_radio li input:checked~label:before {
+	/* background-color: #12749B; */
+    border-color: #606D48;
+}
+
+html body .gform_wrapper ul.gfield_radio li label:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+html body .gform_wrapper ul.gfield_radio li input:checked~label:after {
+	display: block;
+}
+
+html body .gform_wrapper ul.gfield_radio li label:after {
+	top: 8px;
+	left: 5px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #606D48;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li {
+	display: block;
+    position: relative;
+    margin-bottom: 20px;
+    /* cursor: pointer; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li:before {
+	display: none !important;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li label {
+	padding-left: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 2px;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li label:before {
+	content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    border: 2px solid #606D48;
+    border-radius: 2px;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li input~label:hover:before {
+	/* background-color: #ccc; */
+    border-color: #82965C;
+
+}
+
+html body .gform_wrapper ul.gfield_checkbox li:hover input~label {
+	font-weight: normal;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li input:checked~label:before {
+	background-color: #606D48;
+    border-color: #606D48;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li label:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li input:checked~label:after {
+	display: block;
+}
+
+html body .gform_wrapper ul.gfield_checkbox li label:after {
+	left: 8px;
+    top: 4px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+	border-width: 0px 1.5px 1.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.elementor .gm-style img {
+	max-width: none;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield.combo-name-fields {
+	margin-bottom: 0 !important;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield.combo-name-fields input {
+	margin-bottom: 20px !important;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield.combo-name-fields .ginput_container>span {
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield.combo-name-fields .validation_message {
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+
+/* ------------------------------------------------------------
+gravity form Button styling
+------------------------------------------------------------ */
+
+html body .gform_wrapper form .gform_footer {
+	text-align: center ;
+	padding: 10px 0 0;
+	margin: 0;
+}
+
+html body .gform_wrapper form .gform_footer input[type="submit"] {
+    color: 	#FFFFFF;	
+    background-color: #E51836;
+    font-size: 18px !important;
+    line-height: 18px !important;
+    padding: 17px 30px;
+    font-weight: 700 !important;
+    border: 3px solid#E51836;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+	text-transform: capitalize;
+	max-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html body .gform_wrapper form .gform_footer input[type="submit"]:hover {
+    background-color: #FFF0F2;
+	color: 	#C30F29;
+	text-decoration: none;
+	border: 3px solid #C30F29;
+}
+
+body .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half){
+	max-width: 100% !important;
+	padding: 0 !important;
+}
+html body .gform_wrapper form .gform_footer input[type="submit"] + img{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -30px);
+}
+
+body .gform_wrapper.gform_validation_error .top_label li.gfield.gfield_error.gf_left_half, body .gform_wrapper.gform_validation_error .top_label li.gfield.gfield_error.gf_right_half{
+	max-width: 50%;
+	margin-right: 0 !important;
+}
+/* ------------------------------------------------------------
+End gravity form style
+------------------------------------------------------------ */
+
+.coming-soon-content {
+	min-height: calc(100vh - 1098px);
+}
+/* ---------------------------- code for cookies ---------------------------- */
+#cookie-notice {
+	background-color: #e51836b5 !important;
+	position: fixed;
+	z-index: 11111;
+}
+
+#cookie-notice #cn-notice-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#cookie-notice #cn-notice-text+#cn-accept-cookie,
+#cn-notice-buttons {
+	display: none !important;
+}
+
+#cookie-notice .cookie-notice-container {
+	padding: 25px 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cookie-notice .cookies-message {
+	text-align: left;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	display: block;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	width: 100%;
+	max-width: 60%;
+	margin: 0 1em 0 auto;
+	font-size: 12px;
+}
+
+#cookie-notice .cookies-message a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#cookie-notice .cookies-message a:hover {
+	text-decoration: none;
+}
+
+#cookie-notice .cookies-button-container {
+	max-width: 40%;
+	text-align: center;
+	display: flex;
+	align-content: space-between;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+#cookie-notice .cookies-button-container .cookies-button {
+	border: 0;
+	display: inline-block;
+	color: #fff;
+	margin: 0 4px;
+	padding: 5px 10px;
+	min-width: 110px;
+	font-weight: 500;
+	border-radius: 3px;
+	text-align: center;
+	background-color: #fff;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	line-height: 30px;
+	color: #E51836;
+}
+
+#cookie-notice .cookies-button-container .cookies-button:hover {
+	background-color: #fff;
+	color: #E51836;
+	opacity: 0.8;
+}
+
+.cn-close-icon:before,
+.cn-close-icon:after {
+	background-color: #fff;
+}
+
+.cookie-notice-container .cn-text-container {
+	margin: 0
+}
+
+/* -------------------------- end code for cookies -------------------------- */
+
+body .site-main ol ul:not([class]) li, body .site-main ol ul:not([class]) li ol li ul:not([class]) li{
+    margin-bottom: 15px;     
+}

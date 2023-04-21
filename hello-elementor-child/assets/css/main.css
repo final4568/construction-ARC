@@ -1,0 +1,27 @@
+@import url('style.css'); 
+@import url('header.css');
+@import url('footer.css');
+@import url('us.css');
+
+/* max-1024 fils */
+@import url('style-max-1024px.css');
+@import url('header-max-1024px.css');
+@import url('footer-max-1024px.css');
+@import url('us-max-1024px.css');
+
+
+/* max-767 fils */
+@import url('style-max-767px.css');
+@import url('header-max-767px.css');
+@import url('footer-max-767px.css');
+@import url('us-max-767px.css');
+/* max-640 fils */
+@import url('style-max-640px.css');
+
+/* max-479 fils */
+/* @import url('style-max-479px.css'); */
+@import url('header-max-479px.css');
+@import url('footer-max-479px.css');
+@import url('us-max-479px.css');
+
+

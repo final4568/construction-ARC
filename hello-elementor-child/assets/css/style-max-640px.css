@@ -1,0 +1,28 @@
+@media only screen and (max-width: 641px){
+    .gform_legacy_markup_wrapper .ginput_container span:not(.ginput_price) {
+        display: inline-block !important;
+        margin-bottom: 8px;
+    }}
+@media screen and (max-width:640px){
+    body .gform_wrapper.gform_validation_error .top_label li.gfield.gfield_error.gf_left_half, body .gform_wrapper.gform_validation_error .top_label li.gfield.gfield_error.gf_right_half{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:425px){
+    body .sx-big-btn .elementor-widget-button .elementor-button.elementor-size-xs::after, 
+    .elementor-button:not(.elementor-size-xs)::after{
+        width: 350px;
+    }
+
+    html body .contact-page-form form .gform_footer input[type="submit"]{
+        max-width: 270px;
+    }
+}
+@media screen and (max-width: 380px){
+       
+    body .text-link [type="button"]:not(.gm-control-active), body .text-link [type="submit"]:not(.adminbar-button), body .text-link .elementor-button, body .text-link .elementor-button:focus, body .text-link [type="button"]:not(.gm-control-active):focus, body .text-link [type="button"]:not(.gm-control-active), body .text-link [type="submit"]:not(.adminbar-button):focus, body .text-link button:not(.gm-control-active):focus, body .text-link button:not(.gm-control-active), body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button, body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button{
+        font-size: 16px !important;
+        line-height: 24px;
+    }
+}
