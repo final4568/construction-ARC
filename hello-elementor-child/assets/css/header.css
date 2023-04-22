@@ -62,12 +62,6 @@ body.admin-bar [data-elementor-type="header"]{
     top: 32px
 }
 
-.main-menu ul.menu > li.current-menu-item a,
-.main-menu ul.menu > li.current-menu-item:hover a{
-    font-weight: 700;
-    color: #fff;
-    pointer-events: none;
-}
 .main-menu ul.menu > li .sub-menu li a{
     display: block;
     font-family: 'Open Sans';
@@ -111,11 +105,8 @@ body.active-header .header-logo-col img{
     filter: brightness(1) invert(0);
 }
 
-body.active-header .main-menu ul.menu > li.current-menu-item:hover a,
-body.active-header .main-menu ul.menu > li.current-menu-item a{
-    color: #151336;
-    pointer-events: none;
-}
+
+
 .menu-arrow{
     width: 15px;
     height: 15px;
@@ -141,4 +132,9 @@ body.active-header .menu-arrow {
     display: none;
     visibility: hidden;
     opacity: 0;
+}
+
+.main-menu ul.menu > li .sub-menu li.current_page_item > a{
+    color: #D83434;
+    font-weight: 600
 }

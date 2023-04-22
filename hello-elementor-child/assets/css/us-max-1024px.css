@@ -1,0 +1,8 @@
+@media screen and (max-width:1024px){
+    .mechanical-cta-wrapper .elementor-widget-wrap .mechanical-cta,
+    .contact-cta-wrapper .elementor-widget-wrap .contact-cta-card,
+    .services-wrapper .service-card{
+        width: calc(50% - 30px);
+    }
+   
+}
