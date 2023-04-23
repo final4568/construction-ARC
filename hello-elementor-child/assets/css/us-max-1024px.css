@@ -31,4 +31,19 @@
     .blogsingle-column{
         max-width: calc(100% - 260px);
     }
+
+
+    /*form*/
+    html body .gerneral-form-wrapper .elementor-widget-container ul.gform_fields{
+        column-gap: 80px;
+    }
+    html body .gerneral-form-wrapper .elementor-widget-container ul.gform_fields > li{
+       width: 100%; 
+    } 
+    html body .gform_wrapper form ul.gform_fields li.gfield.second-child-li{
+        margin-top: -30px;
+    }
+
+    
+
 }

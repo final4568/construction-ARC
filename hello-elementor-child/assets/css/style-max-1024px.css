@@ -77,4 +77,8 @@
 		font-size: 20px;
 		line-height: 30px;
 	}
+
+	html body .gform_wrapper form ul.gform_fields li.gfield {
+		margin-bottom: 20px !important;
+	}
 }

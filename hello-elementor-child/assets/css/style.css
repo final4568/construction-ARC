@@ -501,7 +501,7 @@ body .elementor-widget-button.white-btn .elementor-kit-7 .elementor-button:focus
 body .elementor-widget-button.white-btn .elementor-cta--skin-classic .elementor-cta__button.elementor-button,
 body.elementor-page .elementor-widget-call-to-action.white-btn .elementor-cta__button-wrapper .elementor-button, 
 body.elementor-page .elementor-cta--skin-classic.white-btn .elementor-cta__button.elementor-button{
-    color: #E51836;
+    color: #D83434;
     border: 3px solid #FFFFFF;
 	background-color: #FFFFFF;
 
@@ -700,27 +700,27 @@ body .gform_wrapper li.gfield_error .clear-multi .ginput_container_date .select 
 }
 
 .styledSelect {
-	padding: 11px 45px 10px 0px;
-	position: relative;
-	height: 44px;
+	padding: 9px 45px 9px 10px;
+    position: relative;
+    height: 50px;
 	z-index: 4;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	cursor: pointer;
-	border-radius: 0px !important;
+	border-radius: 5px !important;
 	background-color: transparent;
-	border-bottom: 2px solid#676163;
+	border: 2px solid#555C6C;
 	box-shadow: none;
-	font-size: 22px !important;
-	line-height: 22px;
-	color: #676163 !important;
+	font-size:16px !important;
+	line-height: 24px;
+	color: #555C6C !important;
 	text-transform: none;
 	letter-spacing: 0px;
   	transition: all 0.3s;
 }
 
 .styledSelect:focus{
-  	border: 2px solid #a65d43;
+  	border: 2px solid #03143A;
 }
 
 body .gform_wrapper .gfield_required {
@@ -745,13 +745,14 @@ body .gform_wrapper .gfield_time_ampm select {
 	content: "";
     position: absolute;
     top: 50%;
-    transform: translateY(calc(-50% + 1px));
+    transform: translateY(calc(-50% + -1px));
     right: 0;
     line-height: 1;
-    width: 24px;
-    height: 24px;
-    background: url('../img/form-arrow.svg') no-repeat center center;
-	background-size: auto;
+    width: 15px;
+    height: 15px;
+    background: url(../img/form-arrow.svg) no-repeat center center;
+    background-size: auto;
+    right: 10px;
 }
 
 .styledSelect.active:after {
@@ -805,7 +806,7 @@ body form .options li:not(:last-child) {
 
 body form .options li:hover {
 	/* background-color: #DBE9EE; */
-	color: #231F20;
+	color: #03143A;
 	text-decoration: underline;
 }
 
@@ -823,11 +824,11 @@ body form .options li:hover {
 	cursor: default;
 	pointer-events: none;
 	text-decoration: underline;
-	color: #231F20 !important;
+	color: #03143A !important;
 }
 
 .styledSelect.noplaceholder .text-ellipses {
-	color: #676163;
+	color: #03143A;
 }
 html body .styledSelect .text-ellipses{
 	text-overflow: ellipsis;
@@ -838,7 +839,7 @@ html body .styledSelect .text-ellipses{
 
 }
 html body .contact-page-form form ul.gform_fields .styledSelect{
-	height: 46px;
+	height: 50px;
 }
 /* ------------------------------------------------------------
 End of Select Dropdown Custom Style
@@ -1009,14 +1010,7 @@ html body .gform_wrapper div.validation_error html body .gform_wrapper form {
 
 html body .gform_wrapper form ul.gform_fields li.gfield {
 	margin-top: 0;
-	margin-bottom: 44px !important;
-	border: 0;
-	background: none;
-	vertical-align: top;
-	/* letter-spacing: -0.14px; */
-	padding-left: 0;
-	padding-right: 0;
-	/* width: 100%; */
+	margin-bottom: 20px !important;
 }
 
 .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
@@ -1033,15 +1027,16 @@ html body .gform_wrapper form ul.gform_fields li.gfield .ginput_container {
 
 html body .gform_wrapper .top_label .gfield_label,
 html body .gform_wrapper .gform_wrapper legend.gfield_label {
-	font-family: "Rubik", Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-    color: #474747;
-    line-height: 24px;
-	margin-bottom: 8px;
-	letter-spacing: -0.5px;
-	margin-top: 0 !important;
-	display: none;
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #03143A;
+    line-height: 22px;
+    margin-bottom: -30px;
+    margin-left: 11px !important;
+    background: white;
+    padding: 0 10px;
+    position: relative;
 }
 
 html body .gform_wrapper form ul.gform_fields li.gfield input[type="text"],
@@ -1049,19 +1044,21 @@ html body .gform_wrapper form ul.gform_fields li.gfield input[type="email"],
 html body .gform_wrapper form ul.gform_fields li.gfield input[type="number"],
 html body .gform_wrapper form ul.gform_fields li.gfield input[type="tel"], 
 html body .gform_wrapper form ul.gform_fields li.gfield textarea {
+	font-family:  "Poppins", Arial, Helvetica, sans-serif;
 	margin-top: 0;
     margin-bottom: 0;
-    border-radius: 0px !important;
     background-color: transparent;
-    border-bottom: 2px solid #676163;
+    border: 2px solid #555C6C;
     box-shadow: none;
-    font-size: 22px !important;
-    line-height: 22px !important;
-    color: #231F20 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: 	#03143A !important;
     width: 100% !important;
-    padding: 7px 0px 6px 0!important;
+    padding: 6px 10px 6px 10px!important;
     transition: all 0.3s;
-    height: 44px;
+    height: 50px;
+	border-radius: 5px !important;
+
 }
 input[type="text"], input[type="date"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="url"], select, textarea{
 	border: none;
@@ -1073,7 +1070,7 @@ html body .gform_wrapper form ul.gform_fields li.gfield input[type="number"]::-w
 html body .gform_wrapper form ul.gform_fields li.gfield input[type="tel"]::-webkit-input-placeholder, 
 html body .gform_wrapper form ul.gform_fields li.gfield textarea::-webkit-input-placeholder, 
 html body .gform_wrapper form ul.gform_fields li.gfield .styledSelect .text-ellipses {
-	color: #676163;
+	color: #555C6C;
 }
 
 /* html body .gform_wrapper form ul.gform_fields li.gfield .styledSelect .text-ellipses {
@@ -1086,7 +1083,7 @@ html body .gform_wrapper form ul.gform_fields li.gfield input[type="number"]:foc
 html body .gform_wrapper form ul.gform_fields li.gfield input[type="tel"]:focus, 
 html body .gform_wrapper form ul.gform_fields li.gfield textarea:focus, 
 html body .gform_wrapper form ul.gform_fields li.gfield .styledSelect.active {
-	border-bottom: 2px solid #231F20;  
+	border: 2px solid #03143A;  
 }
 
 html body .gform_wrapper form ul.gform_fields li.gfield textarea {
@@ -1108,7 +1105,7 @@ input:-webkit-autofill {
 }
 
 html body .gform_wrapper form ul.gform_fields li.gfield .styledSelect .text-ellipses.valueAdded{
-    color: #231F20 !important;
+    color: #03143A !important;
 }
 
 /* html body .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
@@ -1391,39 +1388,39 @@ gravity form Button styling
 ------------------------------------------------------------ */
 
 html body .gform_wrapper form .gform_footer {
-	text-align: center ;
+	text-align: left;
 	padding: 10px 0 0;
 	margin: 0;
 }
 
 html body .gform_wrapper form .gform_footer input[type="submit"] {
     color: 	#FFFFFF;	
-    background-color: #E51836;
-    font-size: 18px !important;
-    line-height: 18px !important;
-    padding: 17px 30px;
-    font-weight: 700 !important;
-    border: 3px solid#E51836;
+    background-color: #D83434;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    padding: 16px 30px;
+    font-weight: 600 !important;
+    border: 2px solid#D83434;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     -webkit-appearance: none;
     transition: all 0.3s;
     box-sizing: border-box;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 	text-transform: capitalize;
-	max-width: 270px;
+	max-width: 150px;
     width: 100%;
     margin: 0 auto;
 }
 
 html body .gform_wrapper form .gform_footer input[type="submit"]:hover {
-    background-color: #FFF0F2;
-	color: 	#C30F29;
+    background-color: #fff0f200;
+	color: #D83434;
 	text-decoration: none;
-	border: 3px solid #C30F29;
+	border: 2px solid #D83434;
 }
 
 body .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half){
@@ -1450,7 +1447,7 @@ End gravity form style
 }
 /* ---------------------------- code for cookies ---------------------------- */
 #cookie-notice {
-	background-color: #e51836b5 !important;
+	background-color: #D83434b5 !important;
 	position: fixed;
 	z-index: 11111;
 }
@@ -1516,12 +1513,12 @@ End gravity form style
 	font-family: "Montserrat", sans-serif;
 	text-decoration: none;
 	line-height: 30px;
-	color: #E51836;
+	color: #D83434;
 }
 
 #cookie-notice .cookies-button-container .cookies-button:hover {
 	background-color: #fff;
-	color: #E51836;
+	color: #D83434;
 	opacity: 0.8;
 }
 

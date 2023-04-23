@@ -582,6 +582,19 @@ a.facetwp-page:not(.dots):not(.active):hover {
     overflow: hidden;
 }
 
+html body .gerneral-form-wrapper .elementor-widget-container ul.gform_fields{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+html body .gerneral-form-wrapper .elementor-widget-container ul.gform_fields > li{
+   width: calc(50% - 10px); 
+}
+
+html body .gform_wrapper form ul.gform_fields li.gfield.wd-100{
+    width: 100%;
+}
 
 
 
