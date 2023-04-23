@@ -5,4 +5,30 @@
         width: calc(50% - 30px);
     }
    
+    /*blog-featured post*/
+    .content-column{
+    padding-left: 30px;
+    }
+    .featured-inner .image-column .img-wrapper{
+        padding-bottom: 70%;
+    }
+
+
+     /*Blog Post*/
+     .blog-post-wrapper{
+        width: calc(100% + 30px);
+        margin: 0 -15px -40px;
+     }
+     .blog-post-wrapper .post-wrapper{
+        width: calc(50% - 30px);
+        margin: 0 15px 30px;
+    }
+
+    /**/
+    .blogsingle-sidebar{
+        width: 260px !important;
+    }
+    .blogsingle-column{
+        max-width: calc(100% - 260px);
+    }
 }
