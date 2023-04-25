@@ -1,4 +1,5 @@
 @media screen and (max-width:1024px){
+    .bim-cta-wrapper .elementor-widget-wrap .bim-cta,
     .mechanical-cta-wrapper .elementor-widget-wrap .mechanical-cta,
     .contact-cta-wrapper .elementor-widget-wrap .contact-cta-card,
     .services-wrapper .service-card{
@@ -44,6 +45,12 @@
         margin-top: -30px;
     }
 
+
+   /*flipbox*/
+    .flipcard-wrapper-inner .flipcard-wrapper .elementor-widget-wrap .flipcard{
+        width: calc(50% - 30px);
+        margin: 0 15px 30px !important;
+    }
     
 
 }

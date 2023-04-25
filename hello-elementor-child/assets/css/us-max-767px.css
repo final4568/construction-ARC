@@ -41,11 +41,13 @@
     }
 
     /*contact cta*/
+    .bim-cta-wrapper .elementor-widget-wrap,
     .mechanical-cta-wrapper .elementor-widget-wrap,
     .contact-cta-wrapper .elementor-widget-wrap{
         width: 100%;
         margin: 0 0 -30px !important;
     }
+    .bim-cta-wrapper .elementor-widget-wrap .bim-cta,
     .mechanical-cta-wrapper .elementor-widget-wrap .mechanical-cta:last-child,
     .mechanical-cta-wrapper .elementor-widget-wrap .mechanical-cta:nth-last-child(2),
     .mechanical-cta-wrapper .elementor-widget-wrap .mechanical-cta,
@@ -138,6 +140,47 @@
     padding-bottom: 28px !important;
 }
 
+
+/*counter*/
+.counter-section-wrapper .elementor-widget-wrap{
+    width: calc(100% + 20px);
+    margin: 0 -10px -30px;
+}
+.counter-section-wrapper .elementor-widget-wrap .counter-item{
+    width: calc(50% - 20px);
+    margin: 0 10px 30px;
+}
+
+/*Flipbox*/
+.flipcard-wrapper-inner .flipcard-wrapper .elementor-widget-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0px -30px !important;
+}
+.flipcard-wrapper-inner .flipcard-wrapper .elementor-widget-wrap .flipcard{
+    width: 100%;
+    margin: 0 0px 30px !important;
+}
+.flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__button {
+    max-width: max-content;
+}
+.flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay{
+    padding: 52px 21px;
+}
+
+}
+
+@media screen and (max-width: 520px){
+    .counter-section-wrapper .elementor-widget-wrap{
+        width: 100%;
+        margin: 0 0 -30px;
+        justify-content: center;
+    }
+    .counter-section-wrapper .elementor-widget-wrap .counter-item{
+        width: 100%;
+        margin: 0 0 30px;
+    }
 }
 @media screen and (max-width: 380px){
   /*featured post*/

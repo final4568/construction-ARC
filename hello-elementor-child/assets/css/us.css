@@ -13,6 +13,11 @@
         background: linear-gradient(270.35deg, #FFFFFF -0.26%, rgba(255, 255, 255, 0.94) 35.89%, rgba(255, 255, 255, 0) 75.84%);
         transform: matrix(1, 0, 0, -1, 0, 0);
     }
+    .blue-overlay > .elementor-background-overlay{
+        background: linear-gradient(270.32deg, #151336 -0.26%, rgba(21, 19, 54, 0.94) 35.92%, rgba(21, 19, 54, 0) 75.88%);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
 
 .home-about-btn a{
     color: white !important
@@ -160,10 +165,12 @@
 }
 
 /*machnical CTA*/
+.bim-cta-wrapper .elementor-widget-wrap,
 .mechanical-cta-wrapper .elementor-widget-wrap{
     width: calc(100% + 30px);
     margin: 0 -15px -30px !important
 }
+.bim-cta-wrapper .elementor-widget-wrap .bim-cta,
 .mechanical-cta-wrapper .elementor-widget-wrap .mechanical-cta{
     width: calc(33.33% - 30px);
     margin: 0 15px 30px !important;
@@ -175,9 +182,11 @@
 
 
 /*inner service section*/
+.bim-cta .elementor-cta .elementor-cta__bg-overlay,
 .mechanical-cta .elementor-cta .elementor-cta__bg-overlay{
     background: linear-gradient(180deg, rgba(20, 19, 44, 0) 20.61%, #14132C 100%)
 }
+.bim-cta,
 .mechanical-cta{
     border-radius: 5px;
     overflow: hidden;
@@ -596,8 +605,124 @@ html body .gform_wrapper form ul.gform_fields li.gfield.wd-100{
     width: 100%;
 }
 
+/*counter*/
+.counter-section-wrapper .elementor-widget-wrap{
+    width: calc(100% + 30px);
+    margin: 0 -15px -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.counter-section-wrapper .elementor-widget-wrap .counter-item{
+    width: calc(33.33% - 30px);
+    margin: 0 15px 30px;
+}
 
+.counter-section-wrapper .counter-item  .elementor-counter-title{
+    max-width: 230px;
+    margin: 0 auto;
+}
 
+/*flipbox*/
+/*Flip Card Section*/
+.flipcard-wrapper-inner .flipcard-wrapper .elementor-widget-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 30px);
+    margin: 0 -15px -30px !important;
+}
+.flipcard-wrapper-inner .flipcard-wrapper .elementor-widget-wrap .flipcard{
+    width: calc(33.33% - 30px);
+    margin: 0 15px 30px !important;
+}
+
+.flipcard .elementor-flip-box .elementor-flip-box__layer .elementor-flip-box__layer__title{
+    word-break: break-word;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+ }
+
+ 
+ .flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+ }
+ .flipcard .elementor-flip-box .elementor-flip-box__layer .elementor-flip-box__layer__description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+ }
+ .flipcard .elementor-flip-box__front .elementor-flip-box__layer__overlay{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.9) 100%);
+ }
+
+ .flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay{
+    padding: 20px 20px;
+ }
+ .flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__layer__inner{
+    padding:0 10px;
+ }
+ 
+ body .flipcard .elementor-flip-box .elementor-flip-box__layer__description:not(:last-child), .flipcard .elementor-flip-box__layer__title:not(:last-child){
+    margin: 0;
+ }
+ .flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__layer__title{
+    margin-bottom: 25px;
+
+ }
+ .flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__layer__description{
+    margin-bottom: 30px;
+ }
+
+.flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__button span.last::before{
+    display: none;
+}
+
+.flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__button span.last::after{
+    background: url('../img/white-btn-arrow.svg') center center no-repeat;
+    margin-left: 6px;
+    width: 16px !important;
+    margin-bottom: -2px;
+    height: 16px !important;
+}
+.flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__layer__inner{
+    overflow: auto;
+ }
+ .elementor-16 .elementor-element.elementor-element-642de58 .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__button span.last{
+    text-transform: capitalize;
+}
+.cta-flipbox-wrapper .elementor-flip-box__back .elementor-flip-box__layer__inner::-webkit-scrollbar-track,
+ .flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__layer__inner::-webkit-scrollbar-track
+{
+	background-color: #f5f5f5;
+    width: 6px;
+    border-radius: 10px;
+}
+.cta-flipbox-wrapper .elementor-flip-box__back .elementor-flip-box__layer__inner::-webkit-scrollbar,
+.flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__layer__inner::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #ffffff;
+    border-radius: 10px;
+
+}
+.cta-flipbox-wrapper .elementor-flip-box__back .elementor-flip-box__layer__inner::-webkit-scrollbar-thumb,
+.flipcard .elementor-flip-box .elementor-flip-box__back .elementor-flip-box__layer__overlay .elementor-flip-box__layer__inner::-webkit-scrollbar-thumb
+{
+	background-color: #E51836;
+    border: 2px solid #f5f5f5;
+    border-radius: 10px;
+}
+.flipcard .elementor-flip-box__back .elementor-flip-box__button span.last{
+    text-transform: capitalize !important
+}
+body .flipcard.text-link .elementor-button:hover, 
+body .flipcard.text-link .elementor-button:focus{
+    color: #fff;
+}
 @media screen and (max-width:1200px){
 
 .zig-inner-service-overlay > .elementor-background-overlay {
@@ -611,4 +736,16 @@ html body .gform_wrapper form ul.gform_fields li.gfield.wd-100{
 .blog-post-wrapper .post-wrapper {
     margin: 0 15px 30px;
 }
+
+/*counter*/
+.counter-section-wrapper .elementor-widget-wrap{
+    width: calc(100% + 20px);
+    margin: 0 -10px -30px;
+}
+.counter-section-wrapper .elementor-widget-wrap .counter-item{
+    width: calc(33.33% - 20px);
+    margin: 0 10px 30px;
+}
+
+
 }
