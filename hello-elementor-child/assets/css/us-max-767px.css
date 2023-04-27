@@ -15,7 +15,10 @@
 }
 @media screen and (max-width:767px){
 
-
+    /* overlay-home */
+    .home-about-overlay > .elementor-background-overlay{
+        background: linear-gradient(270.29deg, #141336 0.47%, rgba(26, 32, 63, 0.94) 84.58%, rgba(36, 55, 78, 0) 205.87%);
+    }
    /*services section*/
     .services-wrapper{
         width: 100%;
@@ -28,7 +31,7 @@
         margin: 0 0 30px;
     }
     .service-card .serv-content{
-        padding: 15px;
+        padding: 15px 15px 25px;
     }
     .serv-content a{
         font-size: 20px;

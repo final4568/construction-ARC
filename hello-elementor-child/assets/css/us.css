@@ -82,7 +82,7 @@
     background: linear-gradient(180deg, rgba(20, 19, 44, 0) 20.61%, #14132C 100%);
     display: flex;
     align-items: flex-end;
-    padding: 24px;
+    padding: 24px 24px 40px;
 }
 
 .service-card:hover img{
@@ -92,7 +92,7 @@
     color: #ffff;
 }
 .serv-content a:hover{
-    color: #D83434;
+    color: #ffff;
 }
 
 .service-card:hover .serv-content a{
@@ -109,6 +109,7 @@
     height: 100%;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 
 /*home icons box cta*/
