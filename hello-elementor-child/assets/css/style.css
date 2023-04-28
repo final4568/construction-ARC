@@ -700,9 +700,9 @@ body .gform_wrapper li.gfield_error .clear-multi .ginput_container_date .select 
 }
 
 .styledSelect {
-	padding: 9px 45px 9px 10px;
+	padding: 14px 45px 9px 10px;
     position: relative;
-    height: 50px;
+    height: 55px;
 	z-index: 4;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -1037,6 +1037,7 @@ html body .gform_wrapper .gform_wrapper legend.gfield_label {
     background: white;
     padding: 0 10px;
     position: relative;
+	z-index: 5;
 }
 
 html body .gform_wrapper form ul.gform_fields li.gfield input[type="text"],
@@ -1056,7 +1057,7 @@ html body .gform_wrapper form ul.gform_fields li.gfield textarea {
     width: 100% !important;
     padding: 6px 10px 6px 10px!important;
     transition: all 0.3s;
-    height: 50px;
+    height: 55px;
 	border-radius: 5px !important;
 
 }
