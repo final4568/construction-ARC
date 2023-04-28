@@ -226,6 +226,9 @@
 		});  
 
 		/*contact form tab*/	  
+		$('.readonly .ginput_container input').attr(
+			'readonly', 'true'
+		)
 		  
 	});
 
