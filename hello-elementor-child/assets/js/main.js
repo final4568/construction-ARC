@@ -110,21 +110,21 @@
 	// --------------------------------------------------
 
 	// all the elements where MatchHeight will be applied to
-	const matchHeightElements = [
-		'.class-name-here',
-	];
+	// const matchHeightElements = [
+	// 	'.class-name-here',
+	// ];
 
-	// apply matchHeight to a single element
-	function doMatchHeight(_element) {
-		$(_element).matchHeight({
-			byRow: true,
-			property: 'min-height',
-		});
-	}
-	// apply match height to all the elements
-	$(window).on('resize load', function () {
-		matchHeightElements.forEach(doMatchHeight);
-	});
+	// // apply matchHeight to a single element
+	// function doMatchHeight(_element) {
+	// 	$(_element).matchHeight({
+	// 		byRow: true,
+	// 		property: 'min-height',
+	// 	});
+	// }
+	// // apply match height to all the elements
+	// $(window).on('resize load', function () {
+	// 	matchHeightElements.forEach(doMatchHeight);
+	// });
 	//add span to the last word in button
 	$('.text-link .elementor-button, .text-link.more-btn, .arrow-btn .elementor-button').html(function(){	
 		// separate the text by spaces
@@ -202,6 +202,129 @@
 			// animated top scrolling
 			$('body, html').animate({ scrollTop: pos });
 		});
+
+
+		
+		var $basement_SF = $(".basement-sf input");
+		var $main_SF = $(".main-sf input");
+		var $upper_SF = $(".upper-sf input");
+		var $floorplan_FLD = $(".floor-plans input");
+		var $elvation_FLD  = $(".elvation input");
+		var $estimated_FLD = $(".total-cost input");
+		var $revitvalue;
+		
+		var $total;
+		var $floorplan;
+		var $elvation;
+		var $estimated_val;
+
+		$basement_SF.add($main_SF).add($upper_SF).on("input", function() {
+			const valueA = parseFloat($basement_SF.val()) || 0; 
+			const valueB = parseFloat($main_SF.val()) || 0; 
+			const valueC = parseFloat($upper_SF.val()) || 0;
+
+			$total = valueA + valueB + valueC;
+			
+			if($total > 0 && $total <= 2000){
+				if(($('.revit-conversion select').find('option:selected').text()).includes('Yes') == true){
+					$revitvalue = 300;
+					$floorplan = 500;
+					$elvation = 500;
+					$estimated_val = $floorplan + $elvation + $revitvalue;
+	
+					$floorplan_FLD.val($floorplan);
+					$elvation_FLD.val($elvation);
+					$estimated_FLD.val($estimated_val);
+				}else{
+					$revitvalue = 0;
+					$floorplan = 500;
+					$elvation = 500;
+					$estimated_val = $floorplan + $elvation + $revitvalue;
+	
+					$floorplan_FLD.val($floorplan);
+					$elvation_FLD.val($elvation);
+					$estimated_FLD.val($estimated_val);
+				}
+
+			}else if($total > 2000 && $total <= 3000){
+				if(($('.revit-conversion select').find('option:selected').text()).includes('Yes') == true){
+					$revitvalue = 300;
+					$floorplan = 750;
+					$elvation = 750;
+					$$estimated_val = $floorplan + $elvation + $revitvalue;
+
+					$floorplan_FLD.val($floorplan);
+					$elvation_FLD.val($elvation);
+					$estimated_FLD.val($estimated_val);
+				}else{
+					$revitvalue = 0;
+					$floorplan = 750;
+					$elvation = 750;
+					$estimated_val = $floorplan + $elvation + $revitvalue;
+
+					$floorplan_FLD.val($floorplan);
+					$elvation_FLD.val($elvation);
+					$estimated_FLD.val($estimated_val);
+				}
+
+			}else if($total > 3000 && $total <= 4000){
+				if(($('.revit-conversion select').find('option:selected').text()).includes('Yes') == true){
+					$revitvalue = 300;
+					$floorplan = 1000;
+					$elvation = 750;
+					$estimated_val = $floorplan + $elvation + $revitvalue;
+
+					$floorplan_FLD.val($floorplan);
+					$elvation_FLD.val($elvation);
+					$estimated_FLD.val($estimated_val);
+				}else{
+					$revitvalue = 0;
+					$floorplan = 1000;
+					$elvation = 750;
+					$estimated_val = $floorplan + $elvation + $revitvalue;
+
+					$floorplan_FLD.val($floorplan);
+					$elvation_FLD.val($elvation);
+					$estimated_FLD.val($estimated_val);
+				}
+
+
+			}else if($total > 4000 ){
+				if(($('.revit-conversion select').find('option:selected').text()).includes('Yes') == true){
+					$revitvalue = 300;
+					$floorplan = 2000;
+					$elvation = 1000;
+					$estimated_val = $floorplan + $elvation + $revitvalue;
+
+					$floorplan_FLD.val($floorplan);
+					$elvation_FLD.val($elvation);
+					$estimated_FLD.val($estimated_val);
+				
+				}else{
+					$revitvalue = 0;
+					$floorplan = 2000;
+					$elvation = 1000;
+					$estimated_val = $floorplan + $elvation + $revitvalue;
+
+					$floorplan_FLD.val($floorplan);
+					$elvation_FLD.val($elvation);
+					$estimated_FLD.val($estimated_val);
+				}
+			}
+
+		});
+
+		$('.revit-conversion select').on('change', function(){
+			if(($(this).find('option:selected').text()).includes('Yes') == true){
+				$revitvalue = 300;
+				$estimated_val = $floorplan + $elvation + $revitvalue;
+				$estimated_FLD.val($estimated_val);
+			}else{
+				$revitvalue = 0;
+				$estimated_val = $floorplan + $elvation + $revitvalue;
+				$estimated_FLD.val($estimated_val);
+			}
+		})
 	});
 
 	$(document).ready(function() {
@@ -245,7 +368,7 @@
 		});
 	});
 
-	$(window).on("scroll", function() {
+	$(window).on("scroll load", function() {
 		if($(window).scrollTop() > 0) {
 			$("body").addClass("active-header");
 		} else {
@@ -283,6 +406,11 @@
 			});
 		}
 	});
+
+
+
+
+	
 
 }(jQuery))
 
