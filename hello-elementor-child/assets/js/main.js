@@ -204,7 +204,7 @@
 		});
 
 
-		
+		/*quote*/
 		var $basement_SF = $(".basement-sf input");
 		var $main_SF = $(".main-sf input");
 		var $upper_SF = $(".upper-sf input");
@@ -325,6 +325,7 @@
 				$estimated_FLD.val($estimated_val);
 			}
 		})
+		/*quote*/
 	});
 
 	$(document).ready(function() {

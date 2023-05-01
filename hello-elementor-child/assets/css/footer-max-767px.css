@@ -1,0 +1,6 @@
+
+@media screen and (max-width:767px){
+    body .footer-col-3 .elementor-widget-container{
+        padding-top: 12px !important
+    }
+}

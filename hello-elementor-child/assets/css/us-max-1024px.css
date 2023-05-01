@@ -40,12 +40,15 @@
     }
     html body .gerneral-form-wrapper .elementor-widget-container ul.gform_fields > li{
        width: 100%; 
+       padding: 0;
     } 
     html body .gform_wrapper form ul.gform_fields li.gfield.second-child-li{
         margin-top: -30px;
     }
 
-
+    body .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half){
+        max-width: 100% !important;
+    }
    /*flipbox*/
     .flipcard-wrapper-inner .flipcard-wrapper .elementor-widget-wrap .flipcard{
         width: calc(50% - 30px);

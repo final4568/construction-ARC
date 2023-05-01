@@ -600,7 +600,7 @@ html body .gerneral-form-wrapper .elementor-widget-container ul.gform_fields{
     justify-content: space-between;
 }
 html body .gerneral-form-wrapper .elementor-widget-container ul.gform_fields > li{
-   width: calc(50% - 10px); 
+   width: calc(50% - 5px); 
 }
 
 html body .gform_wrapper form ul.gform_fields li.gfield.wd-100{
