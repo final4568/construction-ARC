@@ -2,19 +2,19 @@
 
    /*Overlays*/
    .home-about-overlay > .elementor-background-overlay{
-    background: linear-gradient(270.29deg, #141336 0.47%, rgba(26, 32, 63, 0.94) 34.58%, rgba(36, 55, 78, 0) 95.87%);
+    background: linear-gradient(270.29deg, #141336 0.47%, rgb(26 32 63 / 46%) 34.58%, rgba(36, 55, 78, 0) 95.87%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .zig-inner-service-overlay > .elementor-background-overlay{
-        background: linear-gradient(270.29deg, #FFFFFF 0.47%, rgba(255, 255, 255, 0.94) 34.58%, rgba(255, 255, 255, 0) 64.33%);
+        background: linear-gradient(270.29deg, #ffffff 0.47%, rgb(255 255 255 / 17%) 34.58%, rgba(255, 255, 255, 0) 64.33%);
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .zag-inner-service-overlay > .elementor-background-overlay{
-        background: linear-gradient(270.35deg, #FFFFFF -0.26%, rgba(255, 255, 255, 0.94) 35.89%, rgba(255, 255, 255, 0) 75.84%);
+        background: linear-gradient(270.35deg, #FFFFFF -0.26%, rgb(255 255 255 / 15%) 35.89%, rgba(255, 255, 255, 0) 75.84%);
         transform: matrix(1, 0, 0, -1, 0, 0);
     }
     .blue-overlay > .elementor-background-overlay{
-        background: linear-gradient(270.32deg, #151336 -0.26%, rgba(21, 19, 54, 0.94) 35.92%, rgba(21, 19, 54, 0) 75.88%);
+        background: linear-gradient(270.32deg, #151336ad -0.26%, rgb(21 19 54 / 46%) 35.92%, rgba(21, 19, 54, 0) 75.88%);
         transform: matrix(1, 0, 0, -1, 0, 0);
     }
 
@@ -35,7 +35,7 @@
 
 /*zigzag*/
 .zag-inner .elementor-widget-wrap{
-    max-width: 670px;
+    max-width: 730px;
     margin-left: auto !important;
 }
 
@@ -728,11 +728,11 @@ body .flipcard.text-link .elementor-button:focus{
 @media screen and (max-width:1200px){
 
 .zig-inner-service-overlay > .elementor-background-overlay {
-    background: linear-gradient(270.29deg, #FFFFFF 0.47%, rgba(255, 255, 255, 0.94) 19.58%, rgba(255, 255, 255, 0) 175.33%);
+    background: linear-gradient(270.29deg, #ffffff8f 0.47%, rgb(255 255 255 / 13%) 19.58%, rgba(255, 255, 255, 0) 175.33%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .zag-inner-service-overlay > .elementor-background-overlay {
-    background: linear-gradient(270.35deg, #FFFFFF -0.26%, rgba(255, 255, 255, 0.94) 35.89%, rgba(255, 255, 255, 0) 107.84%);
+    background: linear-gradient(270.35deg, #ffffffc7 -0.26%, rgb(255 255 255 / 0%) 35.89%, rgba(255, 255, 255, 0) 107.84%);
 }
 
 .blog-post-wrapper .post-wrapper {
