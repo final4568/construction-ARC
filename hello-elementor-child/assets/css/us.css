@@ -2,7 +2,7 @@
 
    /*Overlays*/
    .home-about-overlay > .elementor-background-overlay{
-    background: linear-gradient(270.29deg, #141336 0.47%, rgb(26 32 63 / 46%) 34.58%, rgba(36, 55, 78, 0) 95.87%);
+    background:linear-gradient(270.29deg, #1413369c 0.47%, rgb(26 32 63 / 32%) 34.58%, rgba(36, 55, 78, 0) 95.87%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
     }
     .zig-inner-service-overlay > .elementor-background-overlay{
@@ -14,7 +14,7 @@
         transform: matrix(1, 0, 0, -1, 0, 0);
     }
     .blue-overlay > .elementor-background-overlay{
-        background: linear-gradient(270.32deg, #151336ad -0.26%, rgb(21 19 54 / 46%) 35.92%, rgba(21, 19, 54, 0) 75.88%);
+        background: linear-gradient(270.32deg, #151336ad -0.26%, rgb(21 19 54 / 15%) 35.92%, rgba(21, 19, 54, 0) 75.88%);
         transform: matrix(1, 0, 0, -1, 0, 0);
     }
 
@@ -79,7 +79,7 @@
     width: 100%;
     height: 100%;
     top: 0;
-    background: linear-gradient(180deg, rgba(20, 19, 44, 0) 20.61%, #14132C 100%);
+    background: linear-gradient(180deg, rgb(20 19 44 / 0%) 20.61%, #14132c85 100%);
     display: flex;
     align-items: flex-end;
     padding: 24px 24px 40px;

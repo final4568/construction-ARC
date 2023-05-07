@@ -17,7 +17,7 @@
 
     /* overlay-home */
     .home-about-overlay > .elementor-background-overlay{
-        background: linear-gradient(270.29deg, #141336 0.47%, rgba(26, 32, 63, 0.94) 84.58%, rgba(36, 55, 78, 0) 205.87%);
+        background: linear-gradient(270.29deg,#1413366b .47%,rgb(26 32 63 / 32%) 84.58%,rgba(36,55,78,0) 205.87%);
     }
    /*services section*/
     .services-wrapper{
